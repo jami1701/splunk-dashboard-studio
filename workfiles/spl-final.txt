@@ -1,0 +1,28 @@
+| makeresults format=csv data="alertbase
+alert-1-base
+alert-2-base
+alert-3-base
+alert-4-base
+alert-5-base
+"
+| eval alertvalue = round(((random() % 3)/(3)) * (3.2) ,0)+1
+
+| appendpipe 
+    [
+    | eval alertlabel = replace(alertbase,"-base","-ok")
+    | eval alertout = if(alertvalue=1,1,0)
+    |  appendpipe 
+        [
+        | eval alertlabel =  replace(alertbase,"-base","-warn")
+        | eval alertout = if(alertvalue=2,2,0) 
+        | appendpipe 
+            [
+            | eval alertlabel =  replace(alertbase,"-base","-error")
+            | eval alertout = if(alertvalue=3,3,0) 
+            ]
+        ]
+    ]
+| where !isnull(alertlabel)
+
+| eval _time=now()
+| table _time alertlabel alertout
