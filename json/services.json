@@ -1,592 +1,592 @@
 {
-	"visualizations": {
-		"viz_Lg8gUBH4": {
-			"type": "splunk.choropleth.svg",
-			"options": {
-				"backgroundColor": "transparent",
-				"areaIds": "> primary | seriesByName('item')",
-				"areaValues": "> primary | seriesByName('alert')",
-				"areaColors": "> areaValues | rangeValue(areaColorsEditorConfig)",
-				"svg": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg id=\"svg5\" width=\"560\" height=\"330\" version=\"1.1\" viewBox=\"0 0 560 330\" xmlns=\"http://www.w3.org/2000/svg\">\n<g id=\"layer1\" fill=\"#5e7999\">\n<path id=\"alloff\" fill=\"#cccccc\" d=\" m98 320v-30h-20v-2h20v-48h-20v-2h20v-48h-20v-2h20v-48h-20v-2h20v-48h-20v-2h20v-48h-20v-2h22v280h128v-28h-20v-2h20v-48h-20v-2h20v-48h-20v-2h20v-48h-20v-2h20v-48h-20v-2h20v-48h-20v-2h22v280h128v-28h-20v-2h20v-48h-20v-2h20v-48h-20v-2h20v-48h-20v-2h20v-48h-20v-2h20v-48h-20v-2h22v280h138v-28h-20v-2h20v-48h-20v-2h20v-47.974l-20-0.02579v-2h20v-48h-20v-2h20v-48h-20v-2h20v-48h-20v-2h22v280h59.891l0.10938 2zm-88-30v-280h550v2h-148v26h20v2h-20v48h20v2h-20v48h20v2h-20v48h20v2h-20v48h20v2h-20v48h20v2h-22v-278h-138v26h20v2h-20v48h20v2h-20v48h20v2h-20v48h20v2h-20v48h20v2h-20v48h20v2h-22v-278h-128v26h20v2h-20v48h20v2h-20v48h20v2h-20v48h20v2h-20v48h20v2h-20v48h20v2h-22v-278h-128v26h30v2h-30v48h20v2h-20v48h20v2h-20v48h20v2h-20v48h20v2h-20v48h20v2z\"/>\n</g>\n<g id=\"cnsp-t-s\" fill=\"#cccccc\">\n<path id=\"cnsp-t-s-24\" fill=\"#cccccc\" d=\" m498 320v-30h-20v-2h22v30h59.891l0.10938 2z\"/>\n<path id=\"cnsp-t-s-23\" fill=\"#cccccc\" d=\" m498 320v-80h-20v-2h22v80h59.891l0.10938 2z\"/>\n<path id=\"cnsp-t-s-22\" fill=\"#cccccc\" d=\" m498 320v-129.97l-20-0.02579v-2h22v130h59.891l0.10938 2z\"/>\n<path id=\"cnsp-t-s-21\" fill=\"#cccccc\" d=\" m498 320v-180h-20v-2h22v180h59.891l0.10938 2z\"/>\n<path id=\"cnsp-t-s-20\" fill=\"#cccccc\" d=\" m498 320v-230h-20v-2h22v230h59.891l0.10938 2z\"/>\n<path id=\"cnsp-t-s-19\" fill=\"#cccccc\" d=\" m498 320v-280h-20v-2h22v280h59.891l0.10938 2z\"/>\n<path id=\"cnsp-t-s-18\" fill=\"#cccccc\" d=\" m358 320v-30h-20v-2h22v30h200l0.10938 2z\"/>\n<path id=\"cnsp-t-s-17\" fill=\"#cccccc\" d=\" m358 320v-80h-20v-2h22v80h200l0.10938 2z\"/>\n<path id=\"cnsp-t-s-16\" fill=\"#cccccc\" d=\" m358 320v-129.97l-20-0.02579v-2h22v130h200l0.10938 2z\"/>\n<path id=\"cnsp-t-s-15\" fill=\"#cccccc\" d=\" m358 320v-180h-20v-2h22v180h200l0.10938 2z\"/>\n<path id=\"cnsp-t-s-14\" fill=\"#cccccc\" d=\" m358 320v-230h-20v-2h22v230h200l0.10938 2z\"/>\n<path id=\"cnsp-t-s-13\" fill=\"#cccccc\" d=\" m358 320v-280h-20v-2h22v280h200l0.10938 2z\"/>\n<path id=\"cnsp-t-s-12\" fill=\"#cccccc\" d=\" m228 320v-30h-20v-2h22v30h330l0.10938 2z\"/>\n<path id=\"cnsp-t-s-11\" fill=\"#cccccc\" d=\" m228 320v-80h-20v-2h22v80h330l0.10938 2z\"/>\n<path id=\"cnsp-t-s-10\" fill=\"#cccccc\" d=\" m228 320v-129.97l-20-0.02579v-2h22v130h330l0.10938 2z\"/>\n<path id=\"cnsp-t-s-9\" fill=\"#cccccc\" d=\" m228 320v-180h-20v-2h22v180h330l0.10938 2z\"/>\n<path id=\"cnsp-t-s-8\" fill=\"#cccccc\" d=\" m228 320v-230h-20v-2h22v230h330l0.10938 2z\"/>\n<path id=\"cnsp-t-s-7\" fill=\"#cccccc\" d=\" m228 320v-280h-20v-2h22v280h330l0.10938 2z\"/>\n<path id=\"cnsp-t-s-6\" fill=\"#cccccc\" d=\" m98 320v-30h-20v-2h22v30h460l0.10938 2z\"/>\n<path id=\"cnsp-t-s-5\" fill=\"#cccccc\" d=\" m98 320v-80h-20v-2h22v80h460l0.10938 2z\"/>\n<path id=\"cnsp-t-s-4\" fill=\"#cccccc\" d=\" m98 320v-129.97l-20-0.0258v-2h22v130h460l0.10938 2z\"/>\n<path id=\"cnsp-t-s-3\" fill=\"#cccccc\" d=\" m98 320v-180h-20v-2h22v180h460l0.10938 2z\"/>\n<path id=\"cnsp-t-s-2\" fill=\"#cccccc\" d=\" m98 320v-230h-20v-2h22v230h460l0.10938 2z\"/>\n<path id=\"cnsp-t-s-1\" fill=\"#cccccc\" d=\" m98 320v-280h-20v-2h22v280h460l0.10938 2z\"/>\n</g>\n<g id=\"cnsp-t-n\" fill=\"#cccccc\">\n<path id=\"cnsp-t-n-24\" fill=\"#cccccc\" d=\" m410 290v-280h150v2h-148v276h22v2z\"/>\n<path id=\"cnsp-t-n-23\" fill=\"#cccccc\" d=\" m410 240v-230h150v2h-148v226h22v2z\"/>\n<path id=\"cnsp-t-n-22\" fill=\"#cccccc\" d=\" m410 189.88v-179.88h150v2h-148v176h22v2z\"/>\n<path id=\"cnsp-t-n-21\" fill=\"#cccccc\" d=\" m410 139.88v-129.88h150v2h-148v126h22v2z\"/>\n<path id=\"cnsp-t-n-20\" fill=\"#cccccc\" d=\" m410 10h150v2h-148v76h22v2h-24z\"/>\n<path id=\"cnsp-t-n-19\" fill=\"#cccccc\" d=\" m410 10h150v2h-148v26h22v2h-24z\"/>\n<path id=\"cnsp-t-n-18\" fill=\"#cccccc\" d=\" m270 290v-280h290v2h-288v276h22v2z\"/>\n<path id=\"cnsp-t-n-17\" fill=\"#cccccc\" d=\" m270 240v-230h290v2h-288v226h22v2z\"/>\n<path id=\"cnsp-t-n-16\" fill=\"#cccccc\" d=\" m270 189.88v-179.88h290v2h-288v176h22v2z\"/>\n<path id=\"cnsp-t-n-15\" fill=\"#cccccc\" d=\" m270 139.88v-129.88h290v2h-288v126h22v2z\"/>\n<path id=\"cnsp-t-n-14\" fill=\"#cccccc\" d=\" m270 10h290v2h-288v76h22v2h-24z\"/>\n<path id=\"cnsp-t-n-13\" fill=\"#cccccc\" d=\" m270 10h290v2h-288v26h22v2h-24z\"/>\n<path id=\"cnsp-t-n-12\" fill=\"#cccccc\" d=\" m140 290v-280h420v2h-418v276h22v2z\"/>\n<path id=\"cnsp-t-n-11\" fill=\"#cccccc\" d=\" m140 240v-230h420v2h-418v226h22v2z\"/>\n<path id=\"cnsp-t-n-10\" fill=\"#cccccc\" d=\" m140 189.88v-179.88h420v2h-418v176h22v2z\"/>\n<path id=\"cnsp-t-n-9\" fill=\"#cccccc\" d=\" m140 139.88v-129.88h420v2h-418v126h22v2z\"/>\n<path id=\"cnsp-t-n-8\" fill=\"#cccccc\" d=\" m140 10h420v2h-418v76h22v2h-24z\"/>\n<path id=\"cnsp-t-n-7\" fill=\"#cccccc\" d=\" m140 10h420v2h-418v26h22v2h-24z\"/>\n<path id=\"cnsp-t-n-6\" fill=\"#cccccc\" d=\" m10 290v-280h550v2h-548v276h22v2z\"/>\n<path id=\"cnsp-t-n-5\" fill=\"#cccccc\" d=\" m10 240v-230h550v2h-548v226h22v2z\"/>\n<path id=\"cnsp-t-n-4\" fill=\"#cccccc\" d=\" m10 189.88v-179.88h550v2h-548v176h22v2z\"/>\n<path id=\"cnsp-t-n-3\" fill=\"#cccccc\" d=\" m10 139.88v-129.88h550v2h-548v126h22v2z\"/>\n<path id=\"cnsp-t-n-2\" fill=\"#cccccc\" d=\" m10 10h550v2h-548v76h22v2h-24z\"/>\n<path id=\"cnsp-t-n-1\" fill=\"#cccccc\" d=\" m10 10h550v2h-548v26h22v2h-24z\"/>\n</g>\n<g id=\"cnsp-s\" fill=\"#cccccc\">\n<path id=\"cnsp-s-24\" fill=\"#cccccc\" d=\" m430 304 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-23\" fill=\"#cccccc\" d=\" m430 254 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-22\" fill=\"#cccccc\" d=\" m430 204 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-21\" fill=\"#cccccc\" d=\" m430 154 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-20\" fill=\"#cccccc\" d=\" m430 104 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-19\" fill=\"#cccccc\" d=\" m430 54 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-18\" fill=\"#cccccc\" d=\" m290 304 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-17\" fill=\"#cccccc\" d=\" m290 254 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-16\" fill=\"#cccccc\" d=\" m290 204 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-15\" fill=\"#cccccc\" d=\" m290 154 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-14\" fill=\"#cccccc\" d=\" m290 104 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-13\" fill=\"#cccccc\" d=\" m290 54 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-12\" fill=\"#cccccc\" d=\" m160 304 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-11\" fill=\"#cccccc\" d=\" m160 254 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-10\" fill=\"#cccccc\" d=\" m160 204 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-9\" fill=\"#cccccc\" d=\" m160 154 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-8\" fill=\"#cccccc\" d=\" m160 104 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-7\" fill=\"#cccccc\" d=\" m160 54 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-6\" fill=\"#cccccc\" d=\" m30 304 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-5\" fill=\"#cccccc\" d=\" m30 254 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-4\" fill=\"#cccccc\" d=\" m30 204 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-3\" fill=\"#cccccc\" d=\" m30 154 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-2\" fill=\"#cccccc\" d=\" m30 104 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-1\" fill=\"#cccccc\" d=\" m30 54 24 6h1.9375l24.062-6v-36h-50z\"/>\n</g>\n<g id=\"cnsp-n\" fill=\"#cccccc\">\n<path id=\"cnsp-n-24\" fill=\"#cccccc\" d=\" m430 274 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-23\" fill=\"#cccccc\" d=\" m430 224 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-22\" fill=\"#cccccc\" d=\" m430 174 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-21\" fill=\"#cccccc\" d=\" m430 124 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-20\" fill=\"#cccccc\" d=\" m430 74 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-19\" fill=\"#cccccc\" d=\" m430 24 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-18\" fill=\"#cccccc\" d=\" m290 274 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-17\" fill=\"#cccccc\" d=\" m290 224 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-16\" fill=\"#cccccc\" d=\" m290 174 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-15\" fill=\"#cccccc\" d=\" m290 124 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-14\" fill=\"#cccccc\" d=\" m290 74 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-13\" fill=\"#cccccc\" d=\" m290 24 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-12\" fill=\"#cccccc\" d=\" m160 274 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-11\" fill=\"#cccccc\" d=\" m160 224 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-10\" fill=\"#cccccc\" d=\" m160 174 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-9\" fill=\"#cccccc\" d=\" m160 124 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-8\" fill=\"#cccccc\" d=\" m160 74 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-7\" fill=\"#cccccc\" d=\" m160 24 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-6\" fill=\"#cccccc\" d=\" m30 274 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-5\" fill=\"#cccccc\" d=\" m30 224 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-4\" fill=\"#cccccc\" d=\" m30 174 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-3\" fill=\"#cccccc\" d=\" m30 124 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-2\" fill=\"#cccccc\" d=\" m30 74 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-1\" fill=\"#cccccc\" d=\" m30 24 24-6h1.9375l24.062 6v36h-50z\"/>\n</g>\n<g id=\"numbers\" transform=\"translate(73.17,-3.0576)\" fill=\"#ffffff\" font-family=\"sans-serif\" font-size=\"12px\">\n<text id=\"cnsp-24\" fill=\"#ffffff\" transform=\"translate(269.65 -.036621)\" x=\"103.4375\" y=\"296\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5638-6-38\" x=\"103.4375\" y=\"296\">24</tspan></text>\n<text id=\"cnsp-23\" fill=\"#ffffff\" transform=\"translate(269.65 -.036621)\" x=\"102.94922\" y=\"245.61465\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5634-2-5\" x=\"102.94922\" y=\"245.61465\">23</tspan></text>\n<text id=\"cnsp-22\" fill=\"#ffffff\" transform=\"translate(269.65 -.036621)\" x=\"104.02345\" y=\"195.5\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5630-2-1\" x=\"104.02345\" y=\"195.5\">22</tspan></text>\n<text id=\"cnsp-21\" fill=\"#ffffff\" transform=\"translate(269.65 -.036621)\" x=\"103.14453\" y=\"145.5\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5626-8-8\" x=\"103.14453\" y=\"145.5\">21</tspan></text>\n<text id=\"cnsp-20\" fill=\"#ffffff\" transform=\"translate(269.65 -.036621)\" x=\"103.20314\" y=\"96.5\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5572-3-1\" x=\"103.20314\" y=\"96.5\">20</tspan></text>\n<text id=\"cnsp-19\" fill=\"#ffffff\" transform=\"translate(269.65 -.036621)\" x=\"102.06055\" y=\"46\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5568-8-59\" x=\"102.06055\" y=\"46\">19</tspan></text>\n<text id=\"cnsp-18\" fill=\"#ffffff\" transform=\"translate(129.69 -.44238)\" x=\"103.4375\" y=\"296\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5638-6-3\" x=\"103.4375\" y=\"296\">18</tspan></text>\n<text id=\"cnsp-17\" fill=\"#ffffff\" transform=\"translate(129.69 -.44238)\" x=\"102.94922\" y=\"245.61465\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5634-2-9\" x=\"102.94922\" y=\"245.61465\">17</tspan></text>\n<text id=\"cnsp-16\" fill=\"#ffffff\" transform=\"translate(129.69 -.44238)\" x=\"104.02345\" y=\"195.5\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5630-2-0\" x=\"104.02345\" y=\"195.5\">16</tspan></text>\n<text id=\"cnsp-15\" fill=\"#ffffff\" transform=\"translate(129.69 -.44238)\" x=\"103.14453\" y=\"145.5\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5626-8-7\" x=\"103.14453\" y=\"145.5\">15</tspan></text>\n<text id=\"cnsp-14\" fill=\"#ffffff\" transform=\"translate(129.69 -.44238)\" x=\"103.20314\" y=\"96.5\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5572-3-8\" x=\"103.20314\" y=\"96.5\">14</tspan></text>\n<text id=\"cnsp-13\" fill=\"#ffffff\" transform=\"translate(129.69 -.44238)\" x=\"102.06055\" y=\"46\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5568-8-5\" x=\"102.06055\" y=\"46\">13</tspan></text>\n<text id=\"cnsp-12\" fill=\"#ffffff\" x=\"103.4375\" y=\"296\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5638-6\" x=\"103.4375\" y=\"296\">12</tspan></text>\n<text id=\"cnsp-11\" fill=\"#ffffff\" x=\"102.94922\" y=\"245.61465\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5634-2\" x=\"102.94922\" y=\"245.61465\">11</tspan></text>\n<text id=\"cnsp-10\" fill=\"#ffffff\" x=\"104.02345\" y=\"195.5\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5630-2\" x=\"104.02345\" y=\"195.5\">10</tspan></text>\n<text id=\"cnsp-9\" fill=\"#ffffff\" x=\"111.14453\" y=\"145.5\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5626-8\" x=\"111.14453\" y=\"145.5\">9</tspan></text>\n<text id=\"cnsp-8\" fill=\"#ffffff\" x=\"111.20314\" y=\"96.5\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5572-3\" x=\"111.20314\" y=\"96.5\">8</tspan></text>\n<text id=\"cnsp-7\" fill=\"#ffffff\" x=\"110.06055\" y=\"46\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5568-8\" x=\"110.06055\" y=\"46\">7</tspan></text>\n<text id=\"cnsp-6\" fill=\"#ffffff\" x=\"-21.8225\" y=\"296\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5638\" x=\"-21.8225\" y=\"296\">6</tspan></text>\n<text id=\"cnsp-5\" fill=\"#ffffff\" x=\"-22.310781\" y=\"245.61465\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5634\" x=\"-22.310781\" y=\"245.61465\">5</tspan></text>\n<text id=\"cnsp-4\" fill=\"#ffffff\" x=\"-21.236547\" y=\"195.5\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5630\" x=\"-21.236547\" y=\"195.5\">4</tspan></text>\n<text id=\"cnsp-3\" fill=\"#ffffff\" x=\"-22.115469\" y=\"145.5\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5626\" x=\"-22.115469\" y=\"145.5\">3</tspan></text>\n<text id=\"cnsp-2\" fill=\"#ffffff\" x=\"-22.05686\" y=\"96.5\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5572\" x=\"-22.05686\" y=\"96.5\">2</tspan></text>\n<text id=\"cnsp-1\" fill=\"#ffffff\" x=\"-23.199453\" y=\"46\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5568\" x=\"-23.199453\" y=\"46\">1</tspan></text>\n</g>\n</svg>"
-			},
-			"dataSources": {
-				"primary": "ds_vzNWM78n"
-			},
-			"context": {
-				"areaColorsEditorConfig": [
-					{
-						"value": "transparent",
-						"to": 1
-					},
-					{
-						"value": "#b9f4e7",
-						"from": 1,
-						"to": 10
-					},
-					{
-						"value": "#118832",
-						"from": 10,
-						"to": 11
-					},
-					{
-						"value": "#669922",
-						"from": 11,
-						"to": 12
-					},
-					{
-						"value": "#cba700",
-						"from": 12,
-						"to": 13
-					},
-					{
-						"value": "#d97a0d",
-						"from": 13,
-						"to": 14
-					},
-					{
-						"value": "#d41f1f",
-						"from": 14,
-						"to": 15
-					},
-					{
-						"value": "#118832",
-						"from": 15,
-						"to": 20
-					},
-					{
-						"value": "#669922",
-						"from": 20,
-						"to": 21
-					},
-					{
-						"value": "#669922",
-						"from": 21,
-						"to": 22
-					},
-					{
-						"value": "#cba700",
-						"from": 22,
-						"to": 23
-					},
-					{
-						"value": "#d97a0d",
-						"from": 23,
-						"to": 24
-					},
-					{
-						"value": "#d97a0d",
-						"from": 24,
-						"to": 99
-					},
-					{
-						"value": "transparent",
-						"from": 99
-					}
-				]
-			}
-		},
-		"viz_eF7rWwZ9": {
-			"type": "splunk.choropleth.svg",
-			"options": {
-				"svg": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg id=\"svg5\" width=\"200\" height=\"400\" version=\"1.1\" viewBox=\"0 0 200 400\" xmlns=\"http://www.w3.org/2000/svg\">\n<g id=\"layer1\">\n<path id=\"rect25530\" d=\"m40 120h20v160h-20z\" fill=\"#a9f5e7\" stroke-linejoin=\"round\" stroke-width=\"3\"/>\n<path id=\"north\" d=\"m25 10 25-5 25 5v110h-50z\" fill=\"#cccccc\" stroke=\"#a9f5e7\"/>\n<path id=\"south\" d=\"m25 280h50v110l-25 5-25-5z\" fill=\"#cccccc\" stroke=\"#a9f5e7\"/>\n<path id=\"total\" d=\"m15 150 35-5 35 5 5 49.924-5 50.076-34.527 5-35.473-5-5-50z\" fill=\"#cccccc\" stroke=\"#a9f5e7\"/>\n<text id=\"text25586\" x=\"104.54688\" y=\"72.446289\" fill=\"#ffffff\" font-family=\"sans-serif\" font-size=\"15px\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan25584\" x=\"104.54688\" y=\"72.446289\">North</tspan></text>\n<text id=\"text25590\" x=\"105.19141\" y=\"342.44629\" fill=\"#ffffff\" font-family=\"sans-serif\" font-size=\"15px\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan25588\" x=\"105.19141\" y=\"342.44629\">South</tspan></text>\n<text id=\"text25594\" x=\"106.5\" y=\"207.44629\" fill=\"#ffffff\" font-family=\"sans-serif\" font-size=\"15px\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan25592\" x=\"106.5\" y=\"207.44629\">Overall</tspan></text>\n</g>\n</svg>",
-				"backgroundColor": "transparent",
-				"areaColors": "> areaValues | rangeValue(areaColorsEditorConfig)"
-			},
-			"dataSources": {
-				"primary": "ds_SYpQnA7O"
-			},
-			"context": {
-				"areaColorsEditorConfig": [
-					{
-						"value": "transparent",
-						"to": 1
-					},
-					{
-						"value": "#b9f4e7",
-						"from": 1,
-						"to": 10
-					},
-					{
-						"value": "#118832",
-						"from": 10,
-						"to": 11
-					},
-					{
-						"value": "#669922",
-						"from": 11,
-						"to": 12
-					},
-					{
-						"value": "#cba700",
-						"from": 12,
-						"to": 13
-					},
-					{
-						"value": "#d97a0d",
-						"from": 13,
-						"to": 14
-					},
-					{
-						"value": "#d41f1f",
-						"from": 14,
-						"to": 15
-					},
-					{
-						"value": "#118832",
-						"from": 15,
-						"to": 20
-					},
-					{
-						"value": "#669922",
-						"from": 20,
-						"to": 21
-					},
-					{
-						"value": "#669922",
-						"from": 21,
-						"to": 22
-					},
-					{
-						"value": "#cba700",
-						"from": 22,
-						"to": 23
-					},
-					{
-						"value": "#d97a0d",
-						"from": 23,
-						"to": 24
-					},
-					{
-						"value": "#d97a0d",
-						"from": 24,
-						"to": 99
-					},
-					{
-						"value": "transparent",
-						"from": 99
-					}
-				]
-			}
-		},
-		"viz_r8qwkT1v": {
-			"type": "splunk.pie",
-			"options": {
-				"backgroundColor": "transparent"
-			},
-			"dataSources": {
-				"primary": "ds_tiSCVx8B"
-			}
-		},
-		"viz_JEccZdQE": {
-			"type": "splunk.markdown",
-			"options": {
-				"markdown": "## % Connections ##\n"
-			}
-		},
-		"viz_lWeHyvnu": {
-			"type": "splunk.rectangle",
-			"options": {
-				"strokeWidth": 0,
-				"fillOpacity": 0.75
-			}
-		},
-		"viz_CGO8oZ8v": {
-			"type": "splunk.table",
-			"options": {
-				"count": 99,
-				"headerVisibility": "none",
-				"backgroundColor": "transparent",
-				"tableFormat": {
-					"rowBackgroundColors": "> table | seriesByIndex(0) | pick(tableAltRowBackgroundColorsByBackgroundColor)",
-					"headerBackgroundColor": "> backgroundColor | setColorChannel(tableHeaderBackgroundColorConfig)",
-					"rowColors": "> rowBackgroundColors | maxContrast(tableRowColorMaxContrast)",
-					"headerColor": "> headerBackgroundColor | maxContrast(tableRowColorMaxContrast)"
-				}
-			},
-			"dataSources": {
-				"primary": "ds_19Nj61Us"
-			}
-		},
-		"viz_o4bkCo2T": {
-			"type": "splunk.rectangle",
-			"options": {
-				"strokeWidth": 0,
-				"fillOpacity": 0.75
-			}
-		},
-		"viz_4ixDHsgV": {
-			"type": "splunk.column",
-			"dataSources": {
-				"primary": "ds_dmYFwdt9"
-			},
-			"options": {
-				"legendDisplay": "off",
-				"backgroundColor": "transparent",
-				"xAxisTitleVisibility": "hide",
-				"yAxisTitleVisibility": "hide"
-			}
-		},
-		"viz_qua11Qwq": {
-			"type": "splunk.column",
-			"dataSources": {
-				"primary": "ds_M5Jma9EV"
-			},
-			"options": {
-				"legendDisplay": "off",
-				"backgroundColor": "transparent",
-				"xAxisTitleVisibility": "hide",
-				"yAxisTitleVisibility": "hide"
-			}
-		},
-		"viz_qYngE3p5": {
-			"type": "splunk.rectangle",
-			"options": {
-				"strokeWidth": 0,
-				"fillOpacity": 0.75
-			}
-		},
-		"viz_XrKAjb3O": {
-			"type": "splunk.markdown",
-			"options": {
-				"markdown": "## Incoming\n"
-			}
-		},
-		"viz_zI5YMRni": {
-			"type": "splunk.markdown",
-			"options": {
-				"markdown": "## Outgoing\n"
-			}
-		},
-		"viz_4Aq9JoaG": {
-			"type": "splunk.rectangle",
-			"options": {
-				"strokeWidth": 0,
-				"fillOpacity": 0.75
-			}
-		},
-		"viz_R1PLg0Nd": {
-			"type": "splunk.singlevalue",
-			"dataSources": {
-				"primary": "ds_pfOskdpf"
-			},
-			"options": {
-				"backgroundColor": "transparent",
-				"sparklineDisplay": "off",
-				"trendDisplay": "off",
-				"unit": "GB"
-			},
-			"showProgressBar": false,
-			"showLastUpdated": false
-		},
-		"viz_dace4XHQ": {
-			"type": "splunk.singlevalue",
-			"dataSources": {
-				"primary": "ds_BpbuzRN8"
-			},
-			"options": {
-				"unit": "GB",
-				"backgroundColor": "transparent"
-			},
-			"showProgressBar": false,
-			"showLastUpdated": false
-		},
-		"viz_chhzqhIV": {
-			"type": "splunk.markdown",
-			"options": {
-				"markdown": "# Overview"
-			}
-		},
-		"viz_L4HQqYO2": {
-			"type": "splunk.markdown",
-			"options": {
-				"markdown": "**Services**"
-			}
-		}
-	},
-	"dataSources": {
-		"ds_vzNWM78n": {
-			"type": "ds.search",
-			"options": {
-				"refresh": "10s",
-				"query": "| makeresults count=24\n| streamstats count\n| eval showavail=20\n| eval cnsp = \"cnsp-\" + count \n| eval cnsp_n = \"cnsp-n-\" + count \n| eval cnsp_s = \"cnsp-s-\" + count \n| eval cnsp_t_n = \"cnsp-t-n-\" + count \n| eval cnsp_t_s = \"cnsp-t-s-\" + count \n\n| eval alert_level = if(count<=showavail,round(((random() % 5.2)/(5.2)) * (5.2 - 1) ,0) + 10 ,99)\n| eval isnorth = if(count<=showavail,round(((random() % 2.2)/(2.2)) * (2.2 - 1) ,0),0)\n| eval issouth = if(count<=showavail,if(isnorth=1,0,1) ,0)\n| eval alert_n = if(count<=showavail,if(isnorth=1,alert_level+10,0) ,99)\n| eval alert_s = if(count<=showavail,if(issouth=1,alert_level,0),99)\n\n| rename count as Number \n| table Number cnsp alert_n alert_s isnorth issouth cnsp_n cnsp_s cnsp_t_n cnsp_t_s item alert showavail\n``` numbers ```\n| appendpipe \n    [| where isnull(item) \n    | eval item = cnsp\n    | eval alert = if( Number<=showavail,1,0)]\n    ```blocks North``` \n| appendpipe \n    [| where isnull(item ) \n    | eval item = cnsp_n \n    | eval alert = alert_n ]\n    ```blocks South``` \n| appendpipe \n    [| where isnull(item ) \n    | eval item = cnsp_s \n    | eval alert = alert_s ] \n    ```track North ``` \n| appendpipe \n    [ | where isnull(item ) \n    | eval item = cnsp_t_n \n    | eval alert = isnorth ]\n    ```track south ``` \n| appendpipe \n    [ | where isnull(item ) \n    | eval item = cnsp_t_s \n    | eval alert = issouth ]\n| search item=* \n| table item alert\n| append\n    [ | makeresults \n    | eval item = \"alloff\"\n    | eval alert=0| table item alert ]",
-				"queryParameters": {
-					"earliest": "-15m",
-					"latest": "now"
-				}
-			},
-			"name": "trafic_flows"
-		},
-		"ds_tiSCVx8B": {
-			"type": "ds.chain",
-			"options": {
-				"extend": "ds_vzNWM78n",
-				"query": "``` total trafic north ```\n|  appendpipe \n    [ search item = \"cnsp-t-n*\"\n    | eval trafic = \"North\"\n    | stats sum(alert) as alert by trafic ]\n``` total trafic north ```\n|  appendpipe \n    [ search item = \"cnsp-t-s*\"\n    | eval trafic = \"South\"\n    | stats sum(alert) as alert by trafic ]\n| search trafic=*\n|  table trafic alert\n"
-			},
-			"name": "trafic_split"
-		},
-		"ds_19Nj61Us": {
-			"type": "ds.search",
-			"options": {
-				"query": "| makeresults count=21\n| streamstats count as Number | eval Provider = \"CNSP\" + Number\n| table Number Provider \n|  eval Name = \"Service \" + Number\n| sort Number \n|  table Number Name \n| rename Number as \"Service Number\"",
-				"queryParameters": {
-					"earliest": "-15m",
-					"latest": "now"
-				}
-			},
-			"name": "cnsp_list"
-		},
-		"ds_Y4BxsUuF_ds_C9XVopJ3": {
-			"type": "ds.search",
-			"options": {
-				"refresh": "10s",
-				"query": "| makeresults count=21\n| streamstats count | eval cnsp = \"CNSP\" + count\n| eval in_http = round(((random() % 9.2)/(5.2)) * (5.2 - 1) ,0)\n| eval in_https = round(((random() % 1500)/(1000)) * (1000 - 1) ,0)+800\n| eval in_ssh = round(((random() % 300)/(300)) * (300 - 1) ,0)+800\n| eval in_ldap = round(((random() % 300)/(300)) * (300 - 1) ,0)+600\n| eval in_other = round(((random() % 300)/(300)) * (300 - 1) ,0)+200\n| eval in_total = in_http+ in_https+ in_ssh+ in_ldap+ in_other\n| eval out_http = round(((random() % 5.2)/(5.2)) * (5.2 - 1) ,0)\n| eval out_https = round(((random() % 1000)/(1000)) * (1000 - 1) ,0)+800\n| eval out_ssh = round(((random() % 400)/(300)) * (300 - 1) ,0)+800\n| eval out_ldap = round(((random() % 300)/(300)) * (300 - 1) ,0)+600\n| eval out_other = round(((random() % 300)/(200)) * (300 - 1) ,0)+200\n| eval out_total = out_http+ out_https+ out_ssh+ out_ldap+ out_other\n",
-				"queryParameters": {
-					"earliest": "-15m",
-					"latest": "now"
-				}
-			},
-			"name": "outdata"
-		},
-		"ds_M5Jma9EV": {
-			"type": "ds.chain",
-			"options": {
-				"extend": "ds_Y4BxsUuF_ds_C9XVopJ3",
-				"query": "| table  out* \n| stats sum(*) as *\n| fields - out_total\n| table out*\n| transpose\n| eval column = upper(trim(replace(column, \"out_\", \"\")))"
-			},
-			"name": "outbreakdown"
-		},
-		"ds_BpbuzRN8": {
-			"type": "ds.chain",
-			"options": {
-				"extend": "ds_Y4BxsUuF_ds_C9XVopJ3",
-				"query": "| table out* \n| stats sum(*) as *\n| fields out_total\n| table out*\n| transpose\n| eval column = upper(trim(replace(column, \"out_\", \"\")))"
-			},
-			"name": "outtotal"
-		},
-		"ds_dmYFwdt9": {
-			"type": "ds.chain",
-			"options": {
-				"extend": "ds_Y4BxsUuF_ds_C9XVopJ3",
-				"query": "| table  in* \n| stats sum(*) as *\n| fields - in_total\n| transpose\n| eval column = upper(trim(replace(column, \"out_\", \"\")))"
-			},
-			"name": "inbreakdown"
-		},
-		"ds_pfOskdpf": {
-			"type": "ds.chain",
-			"options": {
-				"extend": "ds_Y4BxsUuF_ds_C9XVopJ3",
-				"query": "| table  in* \n| stats sum(*) as *\n| fields in_total\n| transpose\n| eval column = upper(trim(replace(column, \"out_\", \"\")))"
-			},
-			"name": "intotal"
-		},
-		"ds_SYpQnA7O": {
-			"type": "ds.chain",
-			"options": {
-				"extend": "ds_vzNWM78n",
-				"query": "   | search item=\"cnsp-n-*\" OR item=\"cnsp-s-*\"\n    | eval item = if(like(item,\"cnsp-n-%\") ,\"north\",\"south\")\n| stats avg(alert) as alert by item\n| appendpipe \n    [eval item=\"total\"\n    | stats avg(alert) as alert by item]"
-			},
-			"name": "Search_1"
-		}
-	},
-	"defaults": {
-		"dataSources": {
-			"ds.search": {
-				"options": {
-					"queryParameters": {
-						"latest": "$global_time.latest$",
-						"earliest": "$global_time.earliest$"
-					}
-				}
-			}
-		}
-	},
-	"inputs": {},
-	"layout": {
-		"type": "absolute",
-		"options": {
-			"display": "auto-scale",
-			"showTitleAndDescription": false,
-			"backgroundImage": {
-				"sizeType": "contain",
-				"x": 0,
-				"y": 0
-			},
-			"width": 1600
-		},
-		"structure": [
-			{
-				"item": "viz_4Aq9JoaG",
-				"type": "block",
-				"position": {
-					"x": 1020,
-					"y": 550,
-					"w": 550,
-					"h": 340
-				}
-			},
-			{
-				"item": "viz_qYngE3p5",
-				"type": "block",
-				"position": {
-					"x": 460,
-					"y": 550,
-					"w": 550,
-					"h": 340
-				}
-			},
-			{
-				"item": "viz_o4bkCo2T",
-				"type": "block",
-				"position": {
-					"x": 0,
-					"y": 100,
-					"w": 450,
-					"h": 790
-				}
-			},
-			{
-				"item": "viz_lWeHyvnu",
-				"type": "block",
-				"position": {
-					"x": 1300,
-					"y": 100,
-					"w": 270,
-					"h": 210
-				}
-			},
-			{
-				"item": "viz_Lg8gUBH4",
-				"type": "block",
-				"position": {
-					"x": 470,
-					"y": 110,
-					"w": 672,
-					"h": 396
-				}
-			},
-			{
-				"item": "viz_eF7rWwZ9",
-				"type": "block",
-				"position": {
-					"x": 1070,
-					"y": 100,
-					"w": 288,
-					"h": 420
-				}
-			},
-			{
-				"item": "viz_r8qwkT1v",
-				"type": "block",
-				"position": {
-					"x": 1300,
-					"y": 140,
-					"w": 270,
-					"h": 170
-				}
-			},
-			{
-				"item": "viz_JEccZdQE",
-				"type": "block",
-				"position": {
-					"x": 1300,
-					"y": 100,
-					"w": 270,
-					"h": 50
-				}
-			},
-			{
-				"item": "viz_CGO8oZ8v",
-				"type": "block",
-				"position": {
-					"x": 0,
-					"y": 100,
-					"w": 440,
-					"h": 780
-				}
-			},
-			{
-				"item": "viz_4ixDHsgV",
-				"type": "block",
-				"position": {
-					"x": 460,
-					"y": 600,
-					"w": 550,
-					"h": 190
-				}
-			},
-			{
-				"item": "viz_qua11Qwq",
-				"type": "block",
-				"position": {
-					"x": 1020,
-					"y": 600,
-					"w": 550,
-					"h": 190
-				}
-			},
-			{
-				"item": "viz_XrKAjb3O",
-				"type": "block",
-				"position": {
-					"x": 490,
-					"y": 550,
-					"w": 270,
-					"h": 50
-				}
-			},
-			{
-				"item": "viz_zI5YMRni",
-				"type": "block",
-				"position": {
-					"x": 1050,
-					"y": 550,
-					"w": 270,
-					"h": 50
-				}
-			},
-			{
-				"item": "viz_R1PLg0Nd",
-				"type": "block",
-				"position": {
-					"x": 460,
-					"y": 800,
-					"w": 550,
-					"h": 70
-				}
-			},
-			{
-				"item": "viz_dace4XHQ",
-				"type": "block",
-				"position": {
-					"x": 1020,
-					"y": 800,
-					"w": 550,
-					"h": 70
-				}
-			},
-			{
-				"item": "viz_chhzqhIV",
-				"type": "block",
-				"position": {
-					"x": 10,
-					"y": 40,
-					"w": 300,
-					"h": 50
-				}
-			},
-			{
-				"item": "viz_L4HQqYO2",
-				"type": "block",
-				"position": {
-					"x": 10,
-					"y": 10,
-					"w": 300,
-					"h": 50
-				}
-			}
-		],
-		"globalInputs": []
-	},
-	"description": "",
-	"title": "Service View"
+    "visualizations": {
+        "viz_Lg8gUBH4": {
+            "type": "splunk.choropleth.svg",
+            "options": {
+                "backgroundColor": "transparent",
+                "areaIds": "> primary | seriesByName('item')",
+                "areaValues": "> primary | seriesByName('alert')",
+                "areaColors": "> areaValues | rangeValue(areaColorsEditorConfig)",
+                "svg": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg id=\"svg5\" width=\"560\" height=\"330\" version=\"1.1\" viewBox=\"0 0 560 330\" xmlns=\"http://www.w3.org/2000/svg\">\n<g id=\"layer1\" fill=\"#5e7999\">\n<path id=\"alloff\" fill=\"#cccccc\" d=\" m98 320v-30h-20v-2h20v-48h-20v-2h20v-48h-20v-2h20v-48h-20v-2h20v-48h-20v-2h20v-48h-20v-2h22v280h128v-28h-20v-2h20v-48h-20v-2h20v-48h-20v-2h20v-48h-20v-2h20v-48h-20v-2h20v-48h-20v-2h22v280h128v-28h-20v-2h20v-48h-20v-2h20v-48h-20v-2h20v-48h-20v-2h20v-48h-20v-2h20v-48h-20v-2h22v280h138v-28h-20v-2h20v-48h-20v-2h20v-47.974l-20-0.02579v-2h20v-48h-20v-2h20v-48h-20v-2h20v-48h-20v-2h22v280h59.891l0.10938 2zm-88-30v-280h550v2h-148v26h20v2h-20v48h20v2h-20v48h20v2h-20v48h20v2h-20v48h20v2h-20v48h20v2h-22v-278h-138v26h20v2h-20v48h20v2h-20v48h20v2h-20v48h20v2h-20v48h20v2h-20v48h20v2h-22v-278h-128v26h20v2h-20v48h20v2h-20v48h20v2h-20v48h20v2h-20v48h20v2h-20v48h20v2h-22v-278h-128v26h30v2h-30v48h20v2h-20v48h20v2h-20v48h20v2h-20v48h20v2h-20v48h20v2z\"/>\n</g>\n<g id=\"cnsp-t-s\" fill=\"#cccccc\">\n<path id=\"cnsp-t-s-24\" fill=\"#cccccc\" d=\" m498 320v-30h-20v-2h22v30h59.891l0.10938 2z\"/>\n<path id=\"cnsp-t-s-23\" fill=\"#cccccc\" d=\" m498 320v-80h-20v-2h22v80h59.891l0.10938 2z\"/>\n<path id=\"cnsp-t-s-22\" fill=\"#cccccc\" d=\" m498 320v-129.97l-20-0.02579v-2h22v130h59.891l0.10938 2z\"/>\n<path id=\"cnsp-t-s-21\" fill=\"#cccccc\" d=\" m498 320v-180h-20v-2h22v180h59.891l0.10938 2z\"/>\n<path id=\"cnsp-t-s-20\" fill=\"#cccccc\" d=\" m498 320v-230h-20v-2h22v230h59.891l0.10938 2z\"/>\n<path id=\"cnsp-t-s-19\" fill=\"#cccccc\" d=\" m498 320v-280h-20v-2h22v280h59.891l0.10938 2z\"/>\n<path id=\"cnsp-t-s-18\" fill=\"#cccccc\" d=\" m358 320v-30h-20v-2h22v30h200l0.10938 2z\"/>\n<path id=\"cnsp-t-s-17\" fill=\"#cccccc\" d=\" m358 320v-80h-20v-2h22v80h200l0.10938 2z\"/>\n<path id=\"cnsp-t-s-16\" fill=\"#cccccc\" d=\" m358 320v-129.97l-20-0.02579v-2h22v130h200l0.10938 2z\"/>\n<path id=\"cnsp-t-s-15\" fill=\"#cccccc\" d=\" m358 320v-180h-20v-2h22v180h200l0.10938 2z\"/>\n<path id=\"cnsp-t-s-14\" fill=\"#cccccc\" d=\" m358 320v-230h-20v-2h22v230h200l0.10938 2z\"/>\n<path id=\"cnsp-t-s-13\" fill=\"#cccccc\" d=\" m358 320v-280h-20v-2h22v280h200l0.10938 2z\"/>\n<path id=\"cnsp-t-s-12\" fill=\"#cccccc\" d=\" m228 320v-30h-20v-2h22v30h330l0.10938 2z\"/>\n<path id=\"cnsp-t-s-11\" fill=\"#cccccc\" d=\" m228 320v-80h-20v-2h22v80h330l0.10938 2z\"/>\n<path id=\"cnsp-t-s-10\" fill=\"#cccccc\" d=\" m228 320v-129.97l-20-0.02579v-2h22v130h330l0.10938 2z\"/>\n<path id=\"cnsp-t-s-9\" fill=\"#cccccc\" d=\" m228 320v-180h-20v-2h22v180h330l0.10938 2z\"/>\n<path id=\"cnsp-t-s-8\" fill=\"#cccccc\" d=\" m228 320v-230h-20v-2h22v230h330l0.10938 2z\"/>\n<path id=\"cnsp-t-s-7\" fill=\"#cccccc\" d=\" m228 320v-280h-20v-2h22v280h330l0.10938 2z\"/>\n<path id=\"cnsp-t-s-6\" fill=\"#cccccc\" d=\" m98 320v-30h-20v-2h22v30h460l0.10938 2z\"/>\n<path id=\"cnsp-t-s-5\" fill=\"#cccccc\" d=\" m98 320v-80h-20v-2h22v80h460l0.10938 2z\"/>\n<path id=\"cnsp-t-s-4\" fill=\"#cccccc\" d=\" m98 320v-129.97l-20-0.0258v-2h22v130h460l0.10938 2z\"/>\n<path id=\"cnsp-t-s-3\" fill=\"#cccccc\" d=\" m98 320v-180h-20v-2h22v180h460l0.10938 2z\"/>\n<path id=\"cnsp-t-s-2\" fill=\"#cccccc\" d=\" m98 320v-230h-20v-2h22v230h460l0.10938 2z\"/>\n<path id=\"cnsp-t-s-1\" fill=\"#cccccc\" d=\" m98 320v-280h-20v-2h22v280h460l0.10938 2z\"/>\n</g>\n<g id=\"cnsp-t-n\" fill=\"#cccccc\">\n<path id=\"cnsp-t-n-24\" fill=\"#cccccc\" d=\" m410 290v-280h150v2h-148v276h22v2z\"/>\n<path id=\"cnsp-t-n-23\" fill=\"#cccccc\" d=\" m410 240v-230h150v2h-148v226h22v2z\"/>\n<path id=\"cnsp-t-n-22\" fill=\"#cccccc\" d=\" m410 189.88v-179.88h150v2h-148v176h22v2z\"/>\n<path id=\"cnsp-t-n-21\" fill=\"#cccccc\" d=\" m410 139.88v-129.88h150v2h-148v126h22v2z\"/>\n<path id=\"cnsp-t-n-20\" fill=\"#cccccc\" d=\" m410 10h150v2h-148v76h22v2h-24z\"/>\n<path id=\"cnsp-t-n-19\" fill=\"#cccccc\" d=\" m410 10h150v2h-148v26h22v2h-24z\"/>\n<path id=\"cnsp-t-n-18\" fill=\"#cccccc\" d=\" m270 290v-280h290v2h-288v276h22v2z\"/>\n<path id=\"cnsp-t-n-17\" fill=\"#cccccc\" d=\" m270 240v-230h290v2h-288v226h22v2z\"/>\n<path id=\"cnsp-t-n-16\" fill=\"#cccccc\" d=\" m270 189.88v-179.88h290v2h-288v176h22v2z\"/>\n<path id=\"cnsp-t-n-15\" fill=\"#cccccc\" d=\" m270 139.88v-129.88h290v2h-288v126h22v2z\"/>\n<path id=\"cnsp-t-n-14\" fill=\"#cccccc\" d=\" m270 10h290v2h-288v76h22v2h-24z\"/>\n<path id=\"cnsp-t-n-13\" fill=\"#cccccc\" d=\" m270 10h290v2h-288v26h22v2h-24z\"/>\n<path id=\"cnsp-t-n-12\" fill=\"#cccccc\" d=\" m140 290v-280h420v2h-418v276h22v2z\"/>\n<path id=\"cnsp-t-n-11\" fill=\"#cccccc\" d=\" m140 240v-230h420v2h-418v226h22v2z\"/>\n<path id=\"cnsp-t-n-10\" fill=\"#cccccc\" d=\" m140 189.88v-179.88h420v2h-418v176h22v2z\"/>\n<path id=\"cnsp-t-n-9\" fill=\"#cccccc\" d=\" m140 139.88v-129.88h420v2h-418v126h22v2z\"/>\n<path id=\"cnsp-t-n-8\" fill=\"#cccccc\" d=\" m140 10h420v2h-418v76h22v2h-24z\"/>\n<path id=\"cnsp-t-n-7\" fill=\"#cccccc\" d=\" m140 10h420v2h-418v26h22v2h-24z\"/>\n<path id=\"cnsp-t-n-6\" fill=\"#cccccc\" d=\" m10 290v-280h550v2h-548v276h22v2z\"/>\n<path id=\"cnsp-t-n-5\" fill=\"#cccccc\" d=\" m10 240v-230h550v2h-548v226h22v2z\"/>\n<path id=\"cnsp-t-n-4\" fill=\"#cccccc\" d=\" m10 189.88v-179.88h550v2h-548v176h22v2z\"/>\n<path id=\"cnsp-t-n-3\" fill=\"#cccccc\" d=\" m10 139.88v-129.88h550v2h-548v126h22v2z\"/>\n<path id=\"cnsp-t-n-2\" fill=\"#cccccc\" d=\" m10 10h550v2h-548v76h22v2h-24z\"/>\n<path id=\"cnsp-t-n-1\" fill=\"#cccccc\" d=\" m10 10h550v2h-548v26h22v2h-24z\"/>\n</g>\n<g id=\"cnsp-s\" fill=\"#cccccc\">\n<path id=\"cnsp-s-24\" fill=\"#cccccc\" d=\" m430 304 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-23\" fill=\"#cccccc\" d=\" m430 254 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-22\" fill=\"#cccccc\" d=\" m430 204 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-21\" fill=\"#cccccc\" d=\" m430 154 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-20\" fill=\"#cccccc\" d=\" m430 104 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-19\" fill=\"#cccccc\" d=\" m430 54 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-18\" fill=\"#cccccc\" d=\" m290 304 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-17\" fill=\"#cccccc\" d=\" m290 254 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-16\" fill=\"#cccccc\" d=\" m290 204 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-15\" fill=\"#cccccc\" d=\" m290 154 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-14\" fill=\"#cccccc\" d=\" m290 104 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-13\" fill=\"#cccccc\" d=\" m290 54 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-12\" fill=\"#cccccc\" d=\" m160 304 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-11\" fill=\"#cccccc\" d=\" m160 254 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-10\" fill=\"#cccccc\" d=\" m160 204 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-9\" fill=\"#cccccc\" d=\" m160 154 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-8\" fill=\"#cccccc\" d=\" m160 104 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-7\" fill=\"#cccccc\" d=\" m160 54 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-6\" fill=\"#cccccc\" d=\" m30 304 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-5\" fill=\"#cccccc\" d=\" m30 254 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-4\" fill=\"#cccccc\" d=\" m30 204 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-3\" fill=\"#cccccc\" d=\" m30 154 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-2\" fill=\"#cccccc\" d=\" m30 104 24 6h1.9375l24.062-6v-36h-50z\"/>\n<path id=\"cnsp-s-1\" fill=\"#cccccc\" d=\" m30 54 24 6h1.9375l24.062-6v-36h-50z\"/>\n</g>\n<g id=\"cnsp-n\" fill=\"#cccccc\">\n<path id=\"cnsp-n-24\" fill=\"#cccccc\" d=\" m430 274 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-23\" fill=\"#cccccc\" d=\" m430 224 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-22\" fill=\"#cccccc\" d=\" m430 174 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-21\" fill=\"#cccccc\" d=\" m430 124 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-20\" fill=\"#cccccc\" d=\" m430 74 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-19\" fill=\"#cccccc\" d=\" m430 24 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-18\" fill=\"#cccccc\" d=\" m290 274 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-17\" fill=\"#cccccc\" d=\" m290 224 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-16\" fill=\"#cccccc\" d=\" m290 174 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-15\" fill=\"#cccccc\" d=\" m290 124 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-14\" fill=\"#cccccc\" d=\" m290 74 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-13\" fill=\"#cccccc\" d=\" m290 24 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-12\" fill=\"#cccccc\" d=\" m160 274 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-11\" fill=\"#cccccc\" d=\" m160 224 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-10\" fill=\"#cccccc\" d=\" m160 174 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-9\" fill=\"#cccccc\" d=\" m160 124 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-8\" fill=\"#cccccc\" d=\" m160 74 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-7\" fill=\"#cccccc\" d=\" m160 24 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-6\" fill=\"#cccccc\" d=\" m30 274 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-5\" fill=\"#cccccc\" d=\" m30 224 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-4\" fill=\"#cccccc\" d=\" m30 174 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-3\" fill=\"#cccccc\" d=\" m30 124 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-2\" fill=\"#cccccc\" d=\" m30 74 24-6h1.9375l24.062 6v36h-50z\"/>\n<path id=\"cnsp-n-1\" fill=\"#cccccc\" d=\" m30 24 24-6h1.9375l24.062 6v36h-50z\"/>\n</g>\n<g id=\"numbers\" transform=\"translate(73.17,-3.0576)\" fill=\"#ffffff\" font-family=\"sans-serif\" font-size=\"12px\">\n<text id=\"cnsp-24\" fill=\"#ffffff\" transform=\"translate(269.65 -.036621)\" x=\"103.4375\" y=\"296\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5638-6-38\" x=\"103.4375\" y=\"296\">24</tspan></text>\n<text id=\"cnsp-23\" fill=\"#ffffff\" transform=\"translate(269.65 -.036621)\" x=\"102.94922\" y=\"245.61465\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5634-2-5\" x=\"102.94922\" y=\"245.61465\">23</tspan></text>\n<text id=\"cnsp-22\" fill=\"#ffffff\" transform=\"translate(269.65 -.036621)\" x=\"104.02345\" y=\"195.5\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5630-2-1\" x=\"104.02345\" y=\"195.5\">22</tspan></text>\n<text id=\"cnsp-21\" fill=\"#ffffff\" transform=\"translate(269.65 -.036621)\" x=\"103.14453\" y=\"145.5\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5626-8-8\" x=\"103.14453\" y=\"145.5\">21</tspan></text>\n<text id=\"cnsp-20\" fill=\"#ffffff\" transform=\"translate(269.65 -.036621)\" x=\"103.20314\" y=\"96.5\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5572-3-1\" x=\"103.20314\" y=\"96.5\">20</tspan></text>\n<text id=\"cnsp-19\" fill=\"#ffffff\" transform=\"translate(269.65 -.036621)\" x=\"102.06055\" y=\"46\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5568-8-59\" x=\"102.06055\" y=\"46\">19</tspan></text>\n<text id=\"cnsp-18\" fill=\"#ffffff\" transform=\"translate(129.69 -.44238)\" x=\"103.4375\" y=\"296\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5638-6-3\" x=\"103.4375\" y=\"296\">18</tspan></text>\n<text id=\"cnsp-17\" fill=\"#ffffff\" transform=\"translate(129.69 -.44238)\" x=\"102.94922\" y=\"245.61465\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5634-2-9\" x=\"102.94922\" y=\"245.61465\">17</tspan></text>\n<text id=\"cnsp-16\" fill=\"#ffffff\" transform=\"translate(129.69 -.44238)\" x=\"104.02345\" y=\"195.5\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5630-2-0\" x=\"104.02345\" y=\"195.5\">16</tspan></text>\n<text id=\"cnsp-15\" fill=\"#ffffff\" transform=\"translate(129.69 -.44238)\" x=\"103.14453\" y=\"145.5\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5626-8-7\" x=\"103.14453\" y=\"145.5\">15</tspan></text>\n<text id=\"cnsp-14\" fill=\"#ffffff\" transform=\"translate(129.69 -.44238)\" x=\"103.20314\" y=\"96.5\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5572-3-8\" x=\"103.20314\" y=\"96.5\">14</tspan></text>\n<text id=\"cnsp-13\" fill=\"#ffffff\" transform=\"translate(129.69 -.44238)\" x=\"102.06055\" y=\"46\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5568-8-5\" x=\"102.06055\" y=\"46\">13</tspan></text>\n<text id=\"cnsp-12\" fill=\"#ffffff\" x=\"103.4375\" y=\"296\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5638-6\" x=\"103.4375\" y=\"296\">12</tspan></text>\n<text id=\"cnsp-11\" fill=\"#ffffff\" x=\"102.94922\" y=\"245.61465\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5634-2\" x=\"102.94922\" y=\"245.61465\">11</tspan></text>\n<text id=\"cnsp-10\" fill=\"#ffffff\" x=\"104.02345\" y=\"195.5\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5630-2\" x=\"104.02345\" y=\"195.5\">10</tspan></text>\n<text id=\"cnsp-9\" fill=\"#ffffff\" x=\"111.14453\" y=\"145.5\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5626-8\" x=\"111.14453\" y=\"145.5\">9</tspan></text>\n<text id=\"cnsp-8\" fill=\"#ffffff\" x=\"111.20314\" y=\"96.5\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5572-3\" x=\"111.20314\" y=\"96.5\">8</tspan></text>\n<text id=\"cnsp-7\" fill=\"#ffffff\" x=\"110.06055\" y=\"46\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5568-8\" x=\"110.06055\" y=\"46\">7</tspan></text>\n<text id=\"cnsp-6\" fill=\"#ffffff\" x=\"-21.8225\" y=\"296\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5638\" x=\"-21.8225\" y=\"296\">6</tspan></text>\n<text id=\"cnsp-5\" fill=\"#ffffff\" x=\"-22.310781\" y=\"245.61465\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5634\" x=\"-22.310781\" y=\"245.61465\">5</tspan></text>\n<text id=\"cnsp-4\" fill=\"#ffffff\" x=\"-21.236547\" y=\"195.5\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5630\" x=\"-21.236547\" y=\"195.5\">4</tspan></text>\n<text id=\"cnsp-3\" fill=\"#ffffff\" x=\"-22.115469\" y=\"145.5\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5626\" x=\"-22.115469\" y=\"145.5\">3</tspan></text>\n<text id=\"cnsp-2\" fill=\"#ffffff\" x=\"-22.05686\" y=\"96.5\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5572\" x=\"-22.05686\" y=\"96.5\">2</tspan></text>\n<text id=\"cnsp-1\" fill=\"#ffffff\" x=\"-23.199453\" y=\"46\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan5568\" x=\"-23.199453\" y=\"46\">1</tspan></text>\n</g>\n</svg>"
+            },
+            "dataSources": {
+                "primary": "ds_vzNWM78n"
+            },
+            "context": {
+                "areaColorsEditorConfig": [
+                    {
+                        "value": "transparent",
+                        "to": 1
+                    },
+                    {
+                        "value": "#b9f4e7",
+                        "from": 1,
+                        "to": 10
+                    },
+                    {
+                        "value": "#118832",
+                        "from": 10,
+                        "to": 11
+                    },
+                    {
+                        "value": "#669922",
+                        "from": 11,
+                        "to": 12
+                    },
+                    {
+                        "value": "#cba700",
+                        "from": 12,
+                        "to": 13
+                    },
+                    {
+                        "value": "#d97a0d",
+                        "from": 13,
+                        "to": 14
+                    },
+                    {
+                        "value": "#d41f1f",
+                        "from": 14,
+                        "to": 15
+                    },
+                    {
+                        "value": "#118832",
+                        "from": 15,
+                        "to": 20
+                    },
+                    {
+                        "value": "#669922",
+                        "from": 20,
+                        "to": 21
+                    },
+                    {
+                        "value": "#669922",
+                        "from": 21,
+                        "to": 22
+                    },
+                    {
+                        "value": "#cba700",
+                        "from": 22,
+                        "to": 23
+                    },
+                    {
+                        "value": "#d97a0d",
+                        "from": 23,
+                        "to": 24
+                    },
+                    {
+                        "value": "#d97a0d",
+                        "from": 24,
+                        "to": 99
+                    },
+                    {
+                        "value": "transparent",
+                        "from": 99
+                    }
+                ]
+            }
+        },
+        "viz_eF7rWwZ9": {
+            "type": "splunk.choropleth.svg",
+            "options": {
+                "svg": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg id=\"svg5\" width=\"200\" height=\"400\" version=\"1.1\" viewBox=\"0 0 200 400\" xmlns=\"http://www.w3.org/2000/svg\">\n<g id=\"layer1\">\n<path id=\"rect25530\" d=\"m40 120h20v160h-20z\" fill=\"#a9f5e7\" stroke-linejoin=\"round\" stroke-width=\"3\"/>\n<path id=\"north\" d=\"m25 10 25-5 25 5v110h-50z\" fill=\"#cccccc\" stroke=\"#a9f5e7\"/>\n<path id=\"south\" d=\"m25 280h50v110l-25 5-25-5z\" fill=\"#cccccc\" stroke=\"#a9f5e7\"/>\n<path id=\"total\" d=\"m15 150 35-5 35 5 5 49.924-5 50.076-34.527 5-35.473-5-5-50z\" fill=\"#cccccc\" stroke=\"#a9f5e7\"/>\n<text id=\"text25586\" x=\"104.54688\" y=\"72.446289\" fill=\"#ffffff\" font-family=\"sans-serif\" font-size=\"15px\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan25584\" x=\"104.54688\" y=\"72.446289\">North</tspan></text>\n<text id=\"text25590\" x=\"105.19141\" y=\"342.44629\" fill=\"#ffffff\" font-family=\"sans-serif\" font-size=\"15px\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan25588\" x=\"105.19141\" y=\"342.44629\">South</tspan></text>\n<text id=\"text25594\" x=\"106.5\" y=\"207.44629\" fill=\"#ffffff\" font-family=\"sans-serif\" font-size=\"15px\" style=\"line-height:1.25\" xml:space=\"preserve\"><tspan id=\"tspan25592\" x=\"106.5\" y=\"207.44629\">Overall</tspan></text>\n</g>\n</svg>",
+                "backgroundColor": "transparent",
+                "areaColors": "> areaValues | rangeValue(areaColorsEditorConfig)"
+            },
+            "dataSources": {
+                "primary": "ds_SYpQnA7O"
+            },
+            "context": {
+                "areaColorsEditorConfig": [
+                    {
+                        "value": "transparent",
+                        "to": 1
+                    },
+                    {
+                        "value": "#b9f4e7",
+                        "from": 1,
+                        "to": 10
+                    },
+                    {
+                        "value": "#118832",
+                        "from": 10,
+                        "to": 11
+                    },
+                    {
+                        "value": "#669922",
+                        "from": 11,
+                        "to": 12
+                    },
+                    {
+                        "value": "#cba700",
+                        "from": 12,
+                        "to": 13
+                    },
+                    {
+                        "value": "#d97a0d",
+                        "from": 13,
+                        "to": 14
+                    },
+                    {
+                        "value": "#d41f1f",
+                        "from": 14,
+                        "to": 15
+                    },
+                    {
+                        "value": "#118832",
+                        "from": 15,
+                        "to": 20
+                    },
+                    {
+                        "value": "#669922",
+                        "from": 20,
+                        "to": 21
+                    },
+                    {
+                        "value": "#669922",
+                        "from": 21,
+                        "to": 22
+                    },
+                    {
+                        "value": "#cba700",
+                        "from": 22,
+                        "to": 23
+                    },
+                    {
+                        "value": "#d97a0d",
+                        "from": 23,
+                        "to": 24
+                    },
+                    {
+                        "value": "#d97a0d",
+                        "from": 24,
+                        "to": 99
+                    },
+                    {
+                        "value": "transparent",
+                        "from": 99
+                    }
+                ]
+            }
+        },
+        "viz_r8qwkT1v": {
+            "type": "splunk.pie",
+            "options": {
+                "backgroundColor": "transparent"
+            },
+            "dataSources": {
+                "primary": "ds_tiSCVx8B"
+            }
+        },
+        "viz_JEccZdQE": {
+            "type": "splunk.markdown",
+            "options": {
+                "markdown": "## % Connections ##\n"
+            }
+        },
+        "viz_lWeHyvnu": {
+            "type": "splunk.rectangle",
+            "options": {
+                "strokeWidth": 0,
+                "fillOpacity": 0.75
+            }
+        },
+        "viz_CGO8oZ8v": {
+            "type": "splunk.table",
+            "options": {
+                "count": 99,
+                "headerVisibility": "none",
+                "backgroundColor": "transparent",
+                "tableFormat": {
+                    "rowBackgroundColors": "> table | seriesByIndex(0) | pick(tableAltRowBackgroundColorsByBackgroundColor)",
+                    "headerBackgroundColor": "> backgroundColor | setColorChannel(tableHeaderBackgroundColorConfig)",
+                    "rowColors": "> rowBackgroundColors | maxContrast(tableRowColorMaxContrast)",
+                    "headerColor": "> headerBackgroundColor | maxContrast(tableRowColorMaxContrast)"
+                }
+            },
+            "dataSources": {
+                "primary": "ds_19Nj61Us"
+            }
+        },
+        "viz_o4bkCo2T": {
+            "type": "splunk.rectangle",
+            "options": {
+                "strokeWidth": 0,
+                "fillOpacity": 0.75
+            }
+        },
+        "viz_4ixDHsgV": {
+            "type": "splunk.column",
+            "dataSources": {
+                "primary": "ds_dmYFwdt9"
+            },
+            "options": {
+                "legendDisplay": "off",
+                "backgroundColor": "transparent",
+                "xAxisTitleVisibility": "hide",
+                "yAxisTitleVisibility": "hide"
+            }
+        },
+        "viz_qua11Qwq": {
+            "type": "splunk.column",
+            "dataSources": {
+                "primary": "ds_M5Jma9EV"
+            },
+            "options": {
+                "legendDisplay": "off",
+                "backgroundColor": "transparent",
+                "xAxisTitleVisibility": "hide",
+                "yAxisTitleVisibility": "hide"
+            }
+        },
+        "viz_qYngE3p5": {
+            "type": "splunk.rectangle",
+            "options": {
+                "strokeWidth": 0,
+                "fillOpacity": 0.75
+            }
+        },
+        "viz_XrKAjb3O": {
+            "type": "splunk.markdown",
+            "options": {
+                "markdown": "## Incoming\n"
+            }
+        },
+        "viz_zI5YMRni": {
+            "type": "splunk.markdown",
+            "options": {
+                "markdown": "## Outgoing\n"
+            }
+        },
+        "viz_4Aq9JoaG": {
+            "type": "splunk.rectangle",
+            "options": {
+                "strokeWidth": 0,
+                "fillOpacity": 0.75
+            }
+        },
+        "viz_R1PLg0Nd": {
+            "type": "splunk.singlevalue",
+            "dataSources": {
+                "primary": "ds_pfOskdpf"
+            },
+            "options": {
+                "backgroundColor": "transparent",
+                "sparklineDisplay": "off",
+                "trendDisplay": "off",
+                "unit": "GB"
+            },
+            "showProgressBar": false,
+            "showLastUpdated": false
+        },
+        "viz_dace4XHQ": {
+            "type": "splunk.singlevalue",
+            "dataSources": {
+                "primary": "ds_BpbuzRN8"
+            },
+            "options": {
+                "unit": "GB",
+                "backgroundColor": "transparent"
+            },
+            "showProgressBar": false,
+            "showLastUpdated": false
+        },
+        "viz_chhzqhIV": {
+            "type": "splunk.markdown",
+            "options": {
+                "markdown": "# Overview"
+            }
+        },
+        "viz_L4HQqYO2": {
+            "type": "splunk.markdown",
+            "options": {
+                "markdown": "**Services**"
+            }
+        }
+    },
+    "dataSources": {
+        "ds_vzNWM78n": {
+            "type": "ds.search",
+            "options": {
+                "refresh": "15s",
+                "query": "| makeresults count=24\n| streamstats count\n| eval showavail=24\n| eval cnsp = \"cnsp-\" + count \n| eval cnsp_n = \"cnsp-n-\" + count \n| eval cnsp_s = \"cnsp-s-\" + count \n| eval cnsp_t_n = \"cnsp-t-n-\" + count \n| eval cnsp_t_s = \"cnsp-t-s-\" + count \n\n| eval alert_level = if(count<=showavail,round(((random() % 5.2)/(5.2)) * (5.2 - 1) ,0) + 10 ,99)\n| eval isnorth = if(count<=showavail,round(((random() % 2.2)/(2.2)) * (2.2 - 1) ,0),0)\n| eval issouth = if(count<=showavail,if(isnorth=1,0,1) ,0)\n| eval alert_n = if(count<=showavail,if(isnorth=1,alert_level+10,0) ,99)\n| eval alert_s = if(count<=showavail,if(issouth=1,alert_level,0),99)\n\n| rename count as Number \n| table Number cnsp alert_n alert_s isnorth issouth cnsp_n cnsp_s cnsp_t_n cnsp_t_s item alert showavail\n``` numbers ```\n| appendpipe \n    [| where isnull(item) \n    | eval item = cnsp\n    | eval alert = if( Number<=showavail,1,0)]\n    ```blocks North``` \n| appendpipe \n    [| where isnull(item ) \n    | eval item = cnsp_n \n    | eval alert = alert_n ]\n    ```blocks South``` \n| appendpipe \n    [| where isnull(item ) \n    | eval item = cnsp_s \n    | eval alert = alert_s ] \n    ```track North ``` \n| appendpipe \n    [ | where isnull(item ) \n    | eval item = cnsp_t_n \n    | eval alert = isnorth ]\n    ```track south ``` \n| appendpipe \n    [ | where isnull(item ) \n    | eval item = cnsp_t_s \n    | eval alert = issouth ]\n| search item=* \n| table item alert\n| append\n    [ | makeresults \n    | eval item = \"alloff\"\n    | eval alert=0| table item alert ]",
+                "queryParameters": {
+                    "earliest": "-15m",
+                    "latest": "now"
+                }
+            },
+            "name": "trafic_flows"
+        },
+        "ds_tiSCVx8B": {
+            "type": "ds.chain",
+            "options": {
+                "extend": "ds_vzNWM78n",
+                "query": "``` total trafic north ```\n|  appendpipe \n    [ search item = \"cnsp-t-n*\"\n    | eval trafic = \"North\"\n    | stats sum(alert) as alert by trafic ]\n``` total trafic north ```\n|  appendpipe \n    [ search item = \"cnsp-t-s*\"\n    | eval trafic = \"South\"\n    | stats sum(alert) as alert by trafic ]\n| search trafic=*\n|  table trafic alert\n"
+            },
+            "name": "trafic_split"
+        },
+        "ds_19Nj61Us": {
+            "type": "ds.search",
+            "options": {
+                "query": "| makeresults count=20\n| streamstats count as Number | eval Provider = \"CNSP\" + Number\n| table Number Provider \n|  eval Name = \"Service \" + Number\n| sort Number \n|  table Number Name \n| rename Number as \"Service Number\"",
+                "queryParameters": {
+                    "earliest": "-15m",
+                    "latest": "now"
+                }
+            },
+            "name": "cnsp_list"
+        },
+        "ds_Y4BxsUuF_ds_C9XVopJ3": {
+            "type": "ds.search",
+            "options": {
+                "refresh": "10s",
+                "query": "| makeresults count=21\n| streamstats count | eval cnsp = \"CNSP\" + count\n| eval in_http = round(((random() % 9.2)/(5.2)) * (5.2 - 1) ,0)\n| eval in_https = round(((random() % 1500)/(1000)) * (1000 - 1) ,0)+800\n| eval in_ssh = round(((random() % 300)/(300)) * (300 - 1) ,0)+800\n| eval in_ldap = round(((random() % 300)/(300)) * (300 - 1) ,0)+600\n| eval in_other = round(((random() % 300)/(300)) * (300 - 1) ,0)+200\n| eval in_total = in_http+ in_https+ in_ssh+ in_ldap+ in_other\n| eval out_http = round(((random() % 5.2)/(5.2)) * (5.2 - 1) ,0)\n| eval out_https = round(((random() % 1000)/(1000)) * (1000 - 1) ,0)+800\n| eval out_ssh = round(((random() % 400)/(300)) * (300 - 1) ,0)+800\n| eval out_ldap = round(((random() % 300)/(300)) * (300 - 1) ,0)+600\n| eval out_other = round(((random() % 300)/(200)) * (300 - 1) ,0)+200\n| eval out_total = out_http+ out_https+ out_ssh+ out_ldap+ out_other\n",
+                "queryParameters": {
+                    "earliest": "-15m",
+                    "latest": "now"
+                }
+            },
+            "name": "outdata"
+        },
+        "ds_M5Jma9EV": {
+            "type": "ds.chain",
+            "options": {
+                "extend": "ds_Y4BxsUuF_ds_C9XVopJ3",
+                "query": "| table  out* \n| stats sum(*) as *\n| fields - out_total\n| table out*\n| transpose\n| eval column = upper(trim(replace(column, \"out_\", \"\")))"
+            },
+            "name": "outbreakdown"
+        },
+        "ds_BpbuzRN8": {
+            "type": "ds.chain",
+            "options": {
+                "extend": "ds_Y4BxsUuF_ds_C9XVopJ3",
+                "query": "| table out* \n| stats sum(*) as *\n| fields out_total\n| table out*\n| transpose\n| eval column = upper(trim(replace(column, \"out_\", \"\")))"
+            },
+            "name": "outtotal"
+        },
+        "ds_dmYFwdt9": {
+            "type": "ds.chain",
+            "options": {
+                "extend": "ds_Y4BxsUuF_ds_C9XVopJ3",
+                "query": "| table  in* \n| stats sum(*) as *\n| fields - in_total\n| transpose\n| eval column = upper(trim(replace(column, \"out_\", \"\")))"
+            },
+            "name": "inbreakdown"
+        },
+        "ds_pfOskdpf": {
+            "type": "ds.chain",
+            "options": {
+                "extend": "ds_Y4BxsUuF_ds_C9XVopJ3",
+                "query": "| table  in* \n| stats sum(*) as *\n| fields in_total\n| transpose\n| eval column = upper(trim(replace(column, \"out_\", \"\")))"
+            },
+            "name": "intotal"
+        },
+        "ds_SYpQnA7O": {
+            "type": "ds.chain",
+            "options": {
+                "extend": "ds_vzNWM78n",
+                "query": "   | search (item=\"cnsp-n-*\" OR item=\"cnsp-s-*\") AND alert!=0\n    | eval item = if(like(item,\"cnsp-n-%\") ,\"north\",\"south\")\n| stats avg(alert) as alert by item\n| appendpipe \n    [eval item=\"total\"\n    | stats avg(alert) as alert by item]"
+            },
+            "name": "traffic_totals"
+        }
+    },
+    "defaults": {
+        "dataSources": {
+            "ds.search": {
+                "options": {
+                    "queryParameters": {
+                        "latest": "$global_time.latest$",
+                        "earliest": "$global_time.earliest$"
+                    }
+                }
+            }
+        }
+    },
+    "inputs": {},
+    "layout": {
+        "type": "absolute",
+        "options": {
+            "display": "auto-scale",
+            "showTitleAndDescription": false,
+            "backgroundImage": {
+                "sizeType": "contain",
+                "x": 0,
+                "y": 0
+            },
+            "width": 1600
+        },
+        "structure": [
+            {
+                "item": "viz_4Aq9JoaG",
+                "type": "block",
+                "position": {
+                    "x": 1020,
+                    "y": 550,
+                    "w": 550,
+                    "h": 340
+                }
+            },
+            {
+                "item": "viz_qYngE3p5",
+                "type": "block",
+                "position": {
+                    "x": 460,
+                    "y": 550,
+                    "w": 550,
+                    "h": 340
+                }
+            },
+            {
+                "item": "viz_o4bkCo2T",
+                "type": "block",
+                "position": {
+                    "x": 0,
+                    "y": 100,
+                    "w": 450,
+                    "h": 790
+                }
+            },
+            {
+                "item": "viz_lWeHyvnu",
+                "type": "block",
+                "position": {
+                    "x": 1300,
+                    "y": 100,
+                    "w": 270,
+                    "h": 210
+                }
+            },
+            {
+                "item": "viz_Lg8gUBH4",
+                "type": "block",
+                "position": {
+                    "x": 470,
+                    "y": 110,
+                    "w": 672,
+                    "h": 396
+                }
+            },
+            {
+                "item": "viz_eF7rWwZ9",
+                "type": "block",
+                "position": {
+                    "x": 1070,
+                    "y": 100,
+                    "w": 288,
+                    "h": 420
+                }
+            },
+            {
+                "item": "viz_r8qwkT1v",
+                "type": "block",
+                "position": {
+                    "x": 1300,
+                    "y": 140,
+                    "w": 270,
+                    "h": 170
+                }
+            },
+            {
+                "item": "viz_JEccZdQE",
+                "type": "block",
+                "position": {
+                    "x": 1300,
+                    "y": 100,
+                    "w": 270,
+                    "h": 50
+                }
+            },
+            {
+                "item": "viz_CGO8oZ8v",
+                "type": "block",
+                "position": {
+                    "x": 0,
+                    "y": 100,
+                    "w": 440,
+                    "h": 780
+                }
+            },
+            {
+                "item": "viz_4ixDHsgV",
+                "type": "block",
+                "position": {
+                    "x": 460,
+                    "y": 600,
+                    "w": 550,
+                    "h": 190
+                }
+            },
+            {
+                "item": "viz_qua11Qwq",
+                "type": "block",
+                "position": {
+                    "x": 1020,
+                    "y": 600,
+                    "w": 550,
+                    "h": 190
+                }
+            },
+            {
+                "item": "viz_XrKAjb3O",
+                "type": "block",
+                "position": {
+                    "x": 490,
+                    "y": 550,
+                    "w": 270,
+                    "h": 50
+                }
+            },
+            {
+                "item": "viz_zI5YMRni",
+                "type": "block",
+                "position": {
+                    "x": 1050,
+                    "y": 550,
+                    "w": 270,
+                    "h": 50
+                }
+            },
+            {
+                "item": "viz_R1PLg0Nd",
+                "type": "block",
+                "position": {
+                    "x": 460,
+                    "y": 800,
+                    "w": 550,
+                    "h": 70
+                }
+            },
+            {
+                "item": "viz_dace4XHQ",
+                "type": "block",
+                "position": {
+                    "x": 1020,
+                    "y": 800,
+                    "w": 550,
+                    "h": 70
+                }
+            },
+            {
+                "item": "viz_chhzqhIV",
+                "type": "block",
+                "position": {
+                    "x": 10,
+                    "y": 40,
+                    "w": 300,
+                    "h": 50
+                }
+            },
+            {
+                "item": "viz_L4HQqYO2",
+                "type": "block",
+                "position": {
+                    "x": 10,
+                    "y": 10,
+                    "w": 300,
+                    "h": 50
+                }
+            }
+        ],
+        "globalInputs": []
+    },
+    "description": "",
+    "title": "Service View"
 }
