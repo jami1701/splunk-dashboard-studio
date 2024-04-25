@@ -1,0 +1,569 @@
+<dashboard version="2" theme="light">
+    <label>Yorkshire Data</label>
+    <description></description>
+    <definition><![CDATA[
+{
+	"visualizations": {
+		"viz_3EaAGXAh": {
+			"type": "splunk.choropleth.svg",
+			"dataSources": {
+				"primary": "ds_0RWxPPfq"
+			},
+			"options": {
+				"areaColors": "> areaValues | rangeValue(areaColorsEditorConfig)",
+				"areaIds": "> primary | seriesByName('place')",
+				"areaValues": "> primary | seriesByName('heat')",
+				"backgroundColor": "transparent",
+				"svg": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg id=\"svg5\" width=\"1290.1\" height=\"1026.6\" version=\"1.1\" viewBox=\"0 0 1290.1 1026.6\" xmlns=\"http://www.w3.org/2000/svg\">\n <defs id=\"defs193\">\n<filter id=\"filter8153\" x=\"-.031044\" y=\"-.04925\" width=\"1.0753\" height=\"1.1161\" color-interpolation-filters=\"sRGB\">\n <feFlood id=\"feFlood8143\" flood-color=\"rgb(0,0,0)\" flood-opacity=\".49804\" result=\"flood\"/>\n <feComposite id=\"feComposite8145\" in=\"flood\" in2=\"SourceGraphic\" operator=\"in\" result=\"composite1\"/>\n <feGaussianBlur id=\"feGaussianBlur8147\" in=\"composite1\" result=\"blur\" stdDeviation=\"5\"/>\n <feOffset id=\"feOffset8149\" dx=\"5\" dy=\"5\" result=\"offset\"/>\n <feComposite id=\"feComposite8151\" in=\"SourceGraphic\" in2=\"offset\" result=\"composite2\"/>\n</filter>\n<filter id=\"filter8165\" x=\"-.024656\" y=\"-.032595\" width=\"1.0581\" height=\"1.0768\" color-interpolation-filters=\"sRGB\">\n <feFlood id=\"feFlood8155\" flood-color=\"rgb(0,0,0)\" flood-opacity=\".49804\" result=\"flood\"/>\n <feComposite id=\"feComposite8157\" in=\"flood\" in2=\"SourceGraphic\" operator=\"in\" result=\"composite1\"/>\n <feGaussianBlur id=\"feGaussianBlur8159\" in=\"composite1\" result=\"blur\" stdDeviation=\"5\"/>\n <feOffset id=\"feOffset8161\" dx=\"5\" dy=\"5\" result=\"offset\"/>\n <feComposite id=\"feComposite8163\" in=\"SourceGraphic\" in2=\"offset\" result=\"composite2\"/>\n</filter>\n<filter id=\"filter8177\" x=\"-.030884\" y=\"-.040727\" width=\"1.0795\" height=\"1.096\" color-interpolation-filters=\"sRGB\">\n <feFlood id=\"feFlood8167\" flood-color=\"rgb(0,0,0)\" flood-opacity=\".49804\" result=\"flood\"/>\n <feComposite id=\"feComposite8169\" in=\"flood\" in2=\"SourceGraphic\" operator=\"in\" result=\"composite1\"/>\n <feGaussianBlur id=\"feGaussianBlur8171\" in=\"composite1\" result=\"blur\" stdDeviation=\"5\"/>\n <feOffset id=\"feOffset8173\" dx=\"5\" dy=\"5\" result=\"offset\"/>\n <feComposite id=\"feComposite8175\" in=\"SourceGraphic\" in2=\"offset\" result=\"composite2\"/>\n</filter>\n<filter id=\"filter8189\" x=\"-.013038\" y=\"-.019323\" width=\"1.0307\" height=\"1.0455\" color-interpolation-filters=\"sRGB\">\n <feFlood id=\"feFlood8179\" flood-color=\"rgb(0,0,0)\" flood-opacity=\".49804\" result=\"flood\"/>\n <feComposite id=\"feComposite8181\" in=\"flood\" in2=\"SourceGraphic\" operator=\"in\" result=\"composite1\"/>\n <feGaussianBlur id=\"feGaussianBlur8183\" in=\"composite1\" result=\"blur\" stdDeviation=\"5\"/>\n <feOffset id=\"feOffset8185\" dx=\"5\" dy=\"5\" result=\"offset\"/>\n <feComposite id=\"feComposite8187\" in=\"SourceGraphic\" in2=\"offset\" result=\"composite2\"/>\n</filter>\n </defs>\n <g id=\"layer1\" transform=\"translate(164 -6.3921)\">\n<path id=\"west\" d=\"m176.53 836.54c-2.9786-3.5954-7.3387-6.1379-12.957-7.5556-7.893-1.9916-8.5075-2.5589-9.0533-8.3589-0.46444-4.9352-2.4944-7.877-9.814-14.222-11.275-9.7738-35.595-33.79-44.617-44.057-5.3711-6.113-6.9853-9.7342-8.4631-18.985-3.0879-19.33-5.732-25.014-12.777-27.47-5.3246-1.8562-12.537-0.24357-14.722 3.2916-2.4616 3.9829-7.4761 1.541-15.179-7.3914-10.374-12.03-12.547-16.36-13.703-27.302-0.91357-8.6492-0.69056-9.2416 5.3537-14.224 3.4688-2.8593 8.5347-8.398 11.257-12.308 4.4496-6.3902 4.9576-8.6383 5.021-22.221l0.07054-15.111 17.263-8.8889c26.016-13.396 30.766-19.612 22.762-29.787-2.9818-3.7908-3.2313-5.349-1.6039-10.018 1.8567-5.3261 2.3033-5.5285 12.202-5.5285 6.0905 0 10.996-0.905 12.046-2.2222 0.97382-1.2222 2.1655-6.5386 2.6482-11.814 0.65415-7.1493 1.874-10.344 4.79-12.543 3.0201-2.2781 3.6423-4.0268 2.7283-7.6684-0.65118-2.5945-2.3055-5.6481-3.6762-6.7857-2.8827-2.3924-3.4108-15.855-0.62197-15.855 1.0286 0 2.6848-2.3366 3.6803-5.1924 1.7408-4.9938 2.2982-5.217 14.574-5.8381 8.2754-0.41869 13.406 0.0855 14.59 1.4338 1.004 1.1438 4.548 5.4199 7.8756 9.5024 8.7306 10.711 11.402 11.718 16.791 6.329 5.6729-5.673 12.442-5.6844 18.095-0.0307 2.4345 2.4344 6.5981 4.9363 9.2525 5.5596 2.6544 0.62332 8.3575 3.8315 12.674 7.1292 8.9797 6.8612 13.398 7.512 16.565 2.4404 2.9429-4.7123 5.5986-4.4881 8.3791 0.7073 2.902 5.4224 11.489 7.343 16.654 3.725 4.8003-3.3622 5.6271-3.3277 9.3455 0.3908 2.3819 2.3819 6.6013 3.1087 19.37 3.3365 8.9785 0.16018 18.057 0.84104 20.174 1.5131 2.382 0.756 5.3631 0.16173 7.8194-1.5587 2.1904-1.5342 7.5994-2.7805 12.068-2.7805 4.5262 0 9.8786-1.2474 12.135-2.8282 3.6915-2.5856 4.5487-2.5856 9.9976 0 9.305 4.4155 20.534 3.0633 20.534-2.4728 0-3.7252 6.5568-12.477 9.3478-12.477 1.0882 0 3.6302-1.5496 5.6488-3.4435 5.005-4.6959 27.448-6.7204 37.448-3.378 6.3717 2.1298 7.1673 3.0495 7.651 8.8438 0.34852 4.1747-0.75183 8.5855-3.1045 12.444-2.7739 4.5499-3.6459 9.0121-3.6509 18.682-6e-3 12.29-0.20954 12.883-6.2289 18.168-6.7569 5.9326-8.6947 15.401-3.5556 17.373 1.4667 0.56282 2.6666 2.3377 2.6666 3.9442-5e-5 1.6065 2.9174 5.3703 6.4832 8.3641l6.4833 5.4432 0.20976 15.89c0.15787 11.954 0.97398 16.979 3.2946 20.286 4.3047 6.1338 3.8474 10.444-1.3596 12.817-7.1363 3.2515-5.9421 10.358 3.1111 18.514 4.1556 3.7437 9.7606 9.8368 12.456 13.54 4.8018 6.5984 5.1315 6.7335 16.444 6.7335 6.3494 0 11.544 0.76883 11.544 1.7085 0 0.9397 1.7508 3.3397 3.8908 5.3333l3.8908 3.6248-8.7797 0.0272c-11.421 0.0354-13.292 1.4339-14.488 10.828-0.54679 4.2965-1.7756 8.8016-2.7308 10.011-0.96298 1.2197-1.1001 3.5955-0.30776 5.3333 0.78582 1.7236 1.5329 7.5337 1.6601 12.912 0.12728 5.3778 0.82717 11.425 1.5554 13.438 1.028 2.8422 0.37053 4.095-2.941 5.6039-2.9838 1.3595-5.1828 4.8611-7.3203 11.657-5.3629 17.05-10.245 19.39-33.737 16.17-8.2045-1.1246-8.2481-1.1671-8.2481-8.044 0-8.248-3.778-10.381-18.387-10.381-5.1727 0-10.875-1.127-12.908-2.5509-3.5145-2.4617-9.2745-3.6352-15.014-3.0589-1.5147 0.15199-3.7928 3.1494-5.0625 6.6606-1.9465 5.383-2.9086 6.1903-6.1349 5.148-8.8899-2.8721-15.111-2.9028-19.395-0.0958-4.3276 2.8356-4.431 2.7885-5.4878-2.4954-1.0728-5.364-1.1251-5.3854-13.21-5.3854-13.743 0-16.4 1.6378-16.4 10.109 0 4.9746-0.90625 6.2215-6.099 8.3911-4.9755 2.0789-6.2035 3.6388-6.6667 8.4683-0.54083 5.6399-0.94332 5.9467-8.5074 6.4854-6.2282 0.44352-8.8705 1.689-12.258 5.7778-4.3165 5.2104-9.7311 6.786-11.802 3.4346-0.6043-0.97779-4.5006-1.7778-8.6586-1.7778-7.8967 0-11.384 2.2157-18.008 11.442-6.5647 9.1433-7.9319 9.8916-18.075 9.8916-7.2632 0-11.281 1.025-15.429 3.9358-3.0843 2.1647-5.8744 4.5647-6.2004 5.3333-1.4155 3.3384-8.9757 1.028-13.159-4.0214z\" fill=\"#dddddd\" filter=\"url(#filter8177)\" opacity=\".75\" stroke=\"#000000\" stroke-width=\"4\"/>\n<path id=\"south\" d=\"m458.01 1010.3c-3.9488-2.7659-7.1796-8.0438-7.1796-11.729 0-10.408-5.5302-11.441-19.434-3.6318-16.202 9.1003-25.692 9.123-28.566 0.068-3.0601-9.6416-26.548-9.9528-35.134-0.4655-7.3694 8.143-31.94 11.878-57.997 8.8153l-19.464-2.2877 2.1608-11.518c1.9455-10.37 0.91231-12.255-10.369-18.911-9.2911-5.4819-12.53-9.8126-12.53-16.753 0-10.728-18.357-29.991-28.581-29.991-6.594 0-8.0746-2.9221-12.451-24.573-1.3852-6.8527-6.914-15.884-12.71-20.761-5.8048-4.8844-10.258-12.164-10.258-16.769 0-4.4756-2.3824-10.115-5.2942-12.531-7.5919-6.3007-3.2665-10.699 10.521-10.699 8.9459 0 14.216-2.7305 21.13-10.948 7.8549-9.335 10.817-10.595 20.11-8.5539 7.471 1.6409 12.78 0.71303 16.882-2.9504 3.2909-2.9393 9.9834-5.89 14.872-6.5572 6.039-0.82413 9.2532-3.778 10.025-9.2131 0.62491-4.4 3.3944-8 6.1545-8s6.0222-4 7.2493-8.8889c2.408-9.5943 15.682-12.781 15.682-3.7654 0 7.4305 6.6236 10.374 12.455 5.5348 2.9785-2.4719 9.3434-3.2292 15.597-1.8557 8.4625 1.8587 11.352 0.85085 14.517-5.064 3.1495-5.8848 5.3185-6.6532 10.68-3.7838 3.7004 1.9804 11.522 3.6008 17.381 3.6008 8.2969 0 10.904 1.7475 11.789 7.901 0.89267 6.2076 4.4936 8.5621 16.801 10.985 20.38 4.0127 30.493-0.75141 35.813-16.871 2.7336-8.2829 6.4023-12.682 10.576-12.682 4.1231 0 7.0912-3.4696 8.3644-9.7778 1.701-8.4278 3.8315-9.873 15.432-10.467 7.402-0.37917 15.344 0.87605 17.65 2.7894 2.8144 2.3358 5.842 1.8285 9.2143-1.5438 2.7624-2.7624 10.532-6.2024 17.266-7.6444 6.7337-1.442 14.195-4.1933 16.581-6.1139s14.391-4.0564 26.678-4.7461c23.502-1.3193 42.287 4.7992 58.623 19.095l7.8604 6.8786-13.559 14.253c-12.787 13.442-13.765 16.097-17.175 46.643-3.4555 30.951-4.2686 33.098-18.302 48.322-9.9781 10.825-14.685 19.148-14.685 25.967 0 13.584-5.9478 18.568-22.159 18.568-19.481 0-38.286 8.6073-38.286 17.524 0 3.9713-2.4857 13.433-5.5238 21.026-4.6716 11.675-7.2276 22.92-8.4535 37.19-0.13475 1.5684-4.8979 4.4737-10.585 6.4562-6.1374 2.1395-11.18 6.9509-12.406 11.838-2.5421 10.128-16.901 13.639-26.963 6.5912z\" fill=\"#dddddd\" filter=\"url(#filter8153)\" opacity=\".75\" stroke=\"#000000\" stroke-width=\"4\"/>\n<path id=\"east\" d=\"m635.93 735.01-17.766-12.647-37.917 1.0915c-20.854 0.60032-39.071-0.0587-40.482-1.4642-1.4105-1.4057 0.089-6.6057 3.3323-11.556 5.0503-7.7076 8.5653-9.0111 24.482-9.0779 10.766-0.0451 25.106-3.0371 34.084-7.1111 8.5247-3.8682 17.775-7.033 20.556-7.033 7.1182 0 10.029-9.7394 4.7959-16.045-2.4138-2.9085-9.7928-5.2881-16.398-5.2881-9.4991 0-12.009-1.4362-12.009-6.8715 0-3.8799 3.2838-7.9138 7.5428-9.2655 6.6782-2.1196 7.2928-4.2178 5.362-18.305-1.1994-8.7509-0.59686-18.87 1.3391-22.488 2.5676-4.7977 2.0745-8.0222-1.8227-11.919-6.9622-6.9622-7.7752-30.367-1.4158-40.757 4.4537-7.2766 4.2636-8.7027-1.7551-13.166-4.8558-3.6011-5.7299-6.284-3.1152-9.5612 4.3496-5.4517 9.9304-36.733 8.6388-48.422-0.54513-4.9336 2.4073-11.529 7.265-16.229 4.5008-4.3548 9.7834-10.707 11.739-14.117 2.2545-3.9306 10.711-7.3512 23.111-9.3477 10.756-1.7318 23.745-4.1855 28.866-5.4526 7.9252-1.961 9.6548-0.93277 11.623 6.9102 1.8415 7.3372 4.4715 9.2141 12.912 9.2141 6.797 0 10.599-1.8153 10.599-5.0605 0-2.7833 4-9.8142 8.8889-15.624 4.8889-5.8101 8.8889-13.798 8.8889-17.752 0-4.1056 5.9371-11.89 13.845-18.153 10.731-8.4988 17.371-10.965 29.522-10.965 19.584 0 45.522-17.179 45.522-30.149 0-4.5105 2.2981-9.0828 5.1069-10.161 2.8813-1.1057 5.5929-7.8568 6.2222-15.492 0.95674-11.608 2.4397-13.685 10.428-14.612 6.9215-0.80281 9.8034 0.79503 11.223 6.2222 1.4593 5.5802 4.7931 7.3024 14.136 7.3024 7.6806 0 14.601 2.6245 18.614 7.0589 4.9568 5.4772 9.6614 6.718 20.996 5.5374 8.034-0.83683 15.807-1.6134 17.274-1.7256 1.4667-0.1123 2.6667-2.6346 2.6667-5.6052 0-6.4224 12.474-4.2408 32 5.5963 6.8444 3.4482 16.964 8.3492 22.487 10.891 9.278 4.2695 9.5647 4.9711 3.7649 9.2121-3.4529 2.5248-10.416 4.5906-15.474 4.5906-10.005 0-25 8.8483-25 14.752 0 2.0251-3.2 7.7502-7.1111 12.722-14.525 18.466-4.4661 72.8 24.848 134.22 10.814 22.656 50.305 80.505 69.237 101.42 22.774 25.161 69.471 94.799 69.471 103.6 0 1.3043-8.0932-1.6616-17.985-6.5909-19.554-9.7441-36.864-9.479-56.878 0.87086-21.372 11.052-29.918 7.6821-62.314-24.568-16.464-16.39-29.97-31.19-30.013-32.889-0.19306-7.5418-13.561-19.534-23.17-20.785-5.7909-0.75368-11.408-1.4806-12.482-1.6153l-28.242 14.328-13.006 5.4341c-7.1531 2.9888-20.359 5.9728-29.347 6.631-8.9879 0.6583-23.178 2.3494-31.532 3.758-11.298 1.9048-16.765 1.1907-21.333-2.7868-15.731-13.696-44.026-7.9225-55.276 11.279-3.5569 6.0705-15.91 18.604-27.452 27.852-28.182 22.582-41.622 32.815-43.099 32.815-0.67475 0-9.2217-5.6912-18.993-12.647z\" fill=\"#dddddd\" filter=\"url(#filter8165)\" opacity=\".75\" stroke=\"#000000\" stroke-width=\"4\"/>\n<path id=\"north\" d=\"m468.72 733.57c-0.0777-21.127 2.6804-26.069 14.548-26.069 11.713 0 12.735-3.6247 4.544-16.125-3.9272-5.9938-9.0149-8.7638-16.096-8.7638-6.7942 0-14.48-3.9256-22.354-11.418-10.709-10.189-11.374-11.876-6.1822-15.672 5.0046-3.6594 5.2044-5.9509 1.4296-16.39-2.4136-6.6746-4.3883-18.191-4.3883-25.592 0-9.2244-2.8417-16.834-9.0354-24.195-7.9489-9.4468-8.4228-11.432-3.9407-16.513 2.8021-3.1764 6.1189-12.975 7.3707-21.775 6.7821-47.679 6.8971-45.051-2.0761-47.453-18.145-4.8581-36.83-2.3648-50.16 6.6928-7.2984 4.9594-13.27 10.759-13.27 12.889 0 2.4286-4.0846 3.0549-10.958 1.6803-6.0268-1.2054-14.196-0.45834-18.154 1.66-9.2583 4.9549-59.25 4.5064-65.386-0.58653-3.2124-2.6661-6.6982-2.7613-11.091-0.30294-4.7477 2.6569-8.0691 2.0801-12.83-2.228-5.1132-4.6274-7.7714-4.9712-13.032-1.6857-5.1859 3.2387-7.5091 3.0429-10.789-0.90901-2.2989-2.77-7.6354-6.0876-11.859-7.3724-4.2234-1.2848-10.559-4.8673-14.079-7.9611-5.1534-4.5292-8.4043-4.8686-16.686-1.7424-8.4994 3.2082-11.248 2.82-15.822-2.2344-3.0447-3.3644-5.5358-8.791-5.5358-12.059 0-6.536-5.4244-7.9924-8.8889-2.3867-1.2086 1.9556-8.503 3.5556-16.21 3.5556l-11.416-0.66594-9.7072 25.337c0 5.2044 1.92 11.383 4.2667 13.729 3.0543 3.0542 3.1183 4.2667 0.22528 4.2667-2.2228 0-4.5428 5.2-5.1556 11.556-0.95643 9.9198-2.6241 11.713-11.781 12.666-5.8666 0.61055-12.495 3.4814-14.729 6.3796-3.4738 4.5057-5.1166 3.9296-11.334-3.9751-3.9995-5.0845-10.69-16.305-14.867-24.935-6.1904-12.788-9.8252-16.108-19.65-17.951-14.414-2.7041-18.394-6.8993-19.993-21.073-0.7089-6.283-3.3953-10.863-6.5368-11.145-2.9333-0.26346-8.1333-0.66331-11.556-0.88888s-6.2222-2.8102-6.2222-5.7435c0-4.0858-4.515-5.3333-19.302-5.3333-23.252 0-30.476-5.7912-30.476-24.432 0-17.435-5.0659-21.79-25.346-21.79-16.193 0-27.987-6.223-27.987-14.767 0-1.9756-10.4-13.789-23.111-26.253-14.6-14.316-23.111-25.546-23.111-30.497 0-10.405 25.885-44.31 39.01-51.098 5.7278-2.962 15.344-5.3854 21.369-5.3854 6.7149 0 11.791-2.1794 13.116-5.6309 3.0364-7.9127 15.841-11.928 23.261-7.2938 10.292 6.4274 14.41-2.2001 17.077-35.774 2.4686-31.081 2.4336-31.268-8.4098-44.761l-10.889-13.55 10.51-8.5899c5.7807-4.7244 12.418-8.6474 14.75-8.7177 2.8318-0.0854 4.0124-6.5218 3.5556-19.385-0.91238-25.693 9.1803-37.632 31.812-37.632 11.882 0 17.944-2.3596 27.405-10.667 7.3592-6.4615 16.169-10.698 22.346-10.746 5.6085-0.0435 14.091-3.0719 18.85-6.7297 8.5352-6.5605 8.8341-6.5305 22.045 2.212 10.972 7.2607 16.477 8.5609 30.459 7.1933 24.627-2.4088 44.071-10.895 49.736-21.707 5.8421-11.15 10.477-11.91 13.552-2.2226 1.2413 3.9111 4.2475 7.1111 6.6803 7.1111 8.547 0 19.986-14.363 19.986-25.095 0-9.6924 0.80513-10.394 9.4421-8.2261 6.7694 1.699 10.688 0.6657 13.844-3.6504 5.5246-7.5553 21.511-4.335 26.71 5.3806 1.9728 3.6862 6.6248 6.7021 10.338 6.7021 3.9832 0 10.904 6.1954 16.88 15.111 9.6876 14.453 10.998 15.157 30.086 16.166 16.588 0.8771 20.276 2.2751 21.847 8.2813 3.0743 11.756 17.974 7.4888 20.186-5.781 2.0849-12.509 13.709-15.697 25.958-7.1184 9.8361 6.8894 32.327 6.8937 38.042 7e-3 2.4345-2.9333 7.2995-5.3333 10.811-5.3333 10.234 1.54e-4 17.633-3.9212 17.633-9.3454 0-10.733 16.153-13.43 52.196-8.714 18.848 2.4659 37.115 6.2612 40.595 8.4342 4.7366 2.9581 8.5031 2.7857 14.99-0.686 6.0504-3.2381 10.675-3.5752 15.331-1.1177 8.5313 4.5033 55.036 4.3451 60.889-0.20718 2.4444-1.9012 4.4444-10.213 4.4444-18.47 0-32.325 35.705-38.163 47.324-7.7386 1.8603 4.8712 4.7586 6.0376 11.068 4.454 6.7082-1.6836 10.638 0.33945 18.26 9.4006 9.986 11.871 25.716 20.435 37.534 20.435 3.6866 0 6.7029 1.6 6.7029 3.5556s2.4 3.5556 5.3333 3.5556 5.3333 2.1211 5.3333 4.7136 3.7667 8.2522 8.3705 12.577c5.8619 5.507 7.8617 10.525 6.6728 16.744-1.9134 10.01 6.8221 21.834 19.795 26.795 4.5938 1.7566 10.529 8.9728 13.555 16.481 2.9609 7.3458 7.6835 18.398 10.495 24.56 6.0744 13.315 6.3511 17.87 1.4344 23.613l28.566 54.384c0 2.4985 3.2986 5.5896 7.3301 6.8692 4.0316 1.2796 12.764 5.7874 19.405 10.017 9.4892 6.044 12.107 10.107 12.225 18.974 0.0888 6.6748 3.7808 15.597 9.0394 21.847 4.8889 5.8101 8.8889 11.533 8.8889 12.717 0 4.4226-27.348 1.9549-33.987-3.0669-3.796-2.8711-11.341-5.2711-16.768-5.3333-7.2202-0.0828-10.78-2.5187-13.277-9.084-2.8696-7.5477-4.971-8.6082-13.245-6.6847-13.172 3.0622-18.788 10.887-16.396 22.847 1.5745 7.8727 0.45934 10.351-5.5098 12.246-4.3036 1.3659-7.484 5.3806-7.484 9.4472 0 3.8896-5.1566 11.782-11.459 17.538-9.4335 8.6162-14.554 10.466-28.967 10.466-14.809 0-19.894 1.9553-32.985 12.682-9.5498 7.8254-15.508 15.655-15.556 20.444-0.0433 4.2691-3.2079 11.762-7.032 16.651-3.8241 4.8889-6.9886 10.889-7.032 13.333-0.14507 8.1562-10.873 4.5718-14.447-4.8267-3.9148-10.297-5.4845-10.304-48.441-0.22258-25.212 5.917-29.636 8.1007-29.636 14.628 0 2.593-4.1125 7.4092-9.1389 10.703-7.0941 4.6482-8.9394 8.5185-8.2476 17.298 1.375 17.446-4.2906 48.058-9.73 52.572-6.8727 5.7039-6.0812 9.434 2.5855 12.185 5.4348 1.7249 6.4032 3.4364 3.5556 6.2841-5.8155 5.8155-4.9372 39.882 1.1587 44.941 3.9742 3.2984 4.2629 6.531 1.3333 14.935-2.6655 7.6463-2.5994 13.226 0.2304 19.437 3.5417 7.7732 2.9897 9.0838-5.1249 12.169-13.359 5.079-10.932 21.646 3.8224 26.096 21.77 6.5662 21.841 6.6121 14.222 9.1528-3.9111 1.3043-13.06 5.0841-20.33 8.3995-7.2705 3.3154-21.881 6.028-32.467 6.028-17.965 0-19.907 0.86368-29.133 12.961-8.9623 11.75-9.339 13.361-4.0328 17.24 6.5778 4.8098 4.3158 8.9099-4.9155 8.9099-3.376 0-7.1954 2.7552-8.4876 6.1226-1.6571 4.3185-3.1182 4.8787-4.9584 1.9012-3.6579-5.9187-35.791-3.6096-39.889 2.8664-2.244 3.5464-3.2499 0.57554-3.2877-9.7105l-4e-5 1e-4z\" fill=\"#dddddd\" filter=\"url(#filter8189)\" opacity=\".75\" stroke=\"#000000\" stroke-width=\"4\"/>\n<circle id=\"york\" cx=\"530.98\" cy=\"488.55\" r=\"16.796\" fill=\"#000000\" stroke=\"#000000\" stroke-dashoffset=\"8\" stroke-width=\"2\"/>\n<circle id=\"scarborough\" cx=\"853.73\" cy=\"232.55\" r=\"16.796\" fill=\"#000000\" stroke=\"#000000\" stroke-dashoffset=\"8\" stroke-width=\"2\"/>\n<circle id=\"hull\" cx=\"881.11\" cy=\"648.55\" r=\"16.796\" fill=\"#000000\" stroke=\"#000000\" stroke-dashoffset=\"8\" stroke-width=\"2\"/>\n<circle id=\"bradford\" cx=\"234.7\" cy=\"624.24\" r=\"16.796\" fill=\"#000000\" stroke=\"#000000\" stroke-dashoffset=\"8\" stroke-width=\"2\"/>\n<circle id=\"leeds\" cx=\"313.62\" cy=\"626.97\" r=\"16.796\" fill=\"#000000\" stroke=\"#000000\" stroke-dashoffset=\"8\" stroke-width=\"2\"/>\n<circle id=\"sheffield\" cx=\"377.1\" cy=\"934.32\" r=\"16.796\" fill=\"#000000\" stroke=\"#000000\" stroke-dashoffset=\"8\" stroke-width=\"2\"/>\n<circle id=\"skipton\" cx=\"106.2\" cy=\"496.86\" r=\"16.796\" fill=\"#000000\" stroke=\"#000000\" stroke-dashoffset=\"8\" stroke-width=\"2\"/>\n<circle id=\"wakefield\" cx=\"353.11\" cy=\"716.11\" r=\"16.796\" fill=\"#000000\" stroke=\"#000000\" stroke-dashoffset=\"8\" stroke-width=\"2\"/>\n<circle id=\"keighley\" cx=\"170\" cy=\"556.11\" r=\"16.796\" fill=\"#000000\" stroke=\"#000000\" stroke-dashoffset=\"8\" stroke-width=\"2\"/>\n<circle id=\"halifax\" cx=\"194.89\" cy=\"665.44\" r=\"16.796\" fill=\"#000000\" stroke=\"#000000\" stroke-dashoffset=\"8\" stroke-width=\"2\"/>\n<circle id=\"malham\" cx=\"50.892\" cy=\"410.75\" r=\"16.796\" fill=\"#000000\" stroke=\"#000000\" stroke-dashoffset=\"8\" stroke-width=\"2\"/>\n<circle id=\"whitby\" cx=\"753.6\" cy=\"76.365\" r=\"16.796\" fill=\"#000000\" stroke=\"#000000\" stroke-dashoffset=\"8\" stroke-width=\"2\"/>\n<circle id=\"harrogate\" cx=\"333.56\" cy=\"458.33\" r=\"16.796\" fill=\"#000000\" stroke=\"#000000\" stroke-dashoffset=\"8\" stroke-width=\"2\"/>\n<text id=\"text8951\" x=\"341.49124\" y=\"913.5968\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"26.667px\" stroke-width=\"1.1378\" text-align=\"center\" text-anchor=\"middle\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan8953\" x=\"341.49124\" y=\"913.5968\" font-size=\"26.667px\" stroke-width=\"1.1378\" style=\"line-height:1\">Sheffield</tspan></text>\n<text id=\"text-a-1\" x=\"169.8429\" y=\"613.13287\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"26.667px\" stroke-width=\"1.1378\" text-align=\"center\" text-anchor=\"middle\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan8953-0\" x=\"169.8429\" y=\"613.13287\" font-size=\"26.667px\" stroke-width=\"1.1378\" style=\"line-height:1\">Bradford</tspan></text>\n<text id=\"text8951-9\" x=\"364.79269\" y=\"635.13287\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"26.667px\" stroke-width=\"1.1378\" text-align=\"center\" text-anchor=\"middle\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan8953-4\" x=\"364.79269\" y=\"635.13287\" font-size=\"26.667px\" stroke-width=\"1.1378\" style=\"line-height:1\">Leeds</tspan></text>\n<text id=\"text8951-8\" x=\"514.66638\" y=\"462.20038\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"26.667px\" stroke-width=\"1.1378\" text-align=\"center\" text-anchor=\"middle\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan8953-8\" x=\"514.66638\" y=\"462.20038\" font-size=\"26.667px\" stroke-width=\"1.1378\" style=\"line-height:1\">York</tspan></text>\n<text id=\"text8951-2\" x=\"837.16748\" y=\"586.72772\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"26.667px\" stroke-width=\"1.1378\" text-align=\"center\" text-anchor=\"middle\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan8953-45\" x=\"837.16748\" y=\"586.72772\" style=\"line-height:1\">Kingston </tspan><tspan id=\"tspan3262\" x=\"837.16748\" y=\"613.39441\" style=\"line-height:1\">upon </tspan><tspan id=\"tspan3266\" x=\"837.16748\" y=\"640.0611\" style=\"line-height:1\">Hull</tspan></text>\n<text id=\"text8951-5\" x=\"775.78174\" y=\"263.06311\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"26.667px\" stroke-width=\"1.1378\" text-align=\"center\" text-anchor=\"middle\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan8953-1\" x=\"775.78174\" y=\"263.06311\" font-size=\"26.667px\" stroke-width=\"1.1378\" style=\"line-height:1\">Scarborough</tspan></text>\n<text id=\"text3279\" x=\"136.22223\" y=\"481.44119\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"13.653px\" letter-spacing=\"0px\" stroke-width=\"1.1378\" word-spacing=\"0px\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan3281\" x=\"136.22223\" y=\"481.44119\" font-family=\"sans-serif\" font-size=\"45.511px\" stroke-width=\"1.1378\" style=\"line-height:1.25\"> </tspan></text>\n<text id=\"text8951-7\" x=\"80.112953\" y=\"475.07623\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"26.667px\" stroke-width=\"1.1378\" text-align=\"center\" text-anchor=\"middle\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan8953-11\" x=\"80.112953\" y=\"475.07623\" font-size=\"26.667px\" stroke-width=\"1.1378\" style=\"line-height:1\">Skipton</tspan></text>\n<text id=\"text8951-9-2\" x=\"283.18762\" y=\"745.52069\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"26.667px\" stroke-width=\"1.1378\" text-align=\"center\" text-anchor=\"middle\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan8953-4-7\" x=\"283.18762\" y=\"745.52069\" font-size=\"26.667px\" stroke-width=\"1.1378\" style=\"line-height:1\">Wakefield</tspan></text>\n<text id=\"text8951-4-1\" x=\"233.02086\" y=\"565.64703\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"26.667px\" stroke-width=\"1.1378\" text-align=\"center\" text-anchor=\"middle\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan8953-0-4\" x=\"233.02086\" y=\"565.64703\" font-size=\"26.667px\" stroke-width=\"1.1378\" style=\"line-height:1\">Keighley</tspan></text>\n<text id=\"text8951-4-3\" x=\"139.62622\" y=\"689.97375\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"26.667px\" stroke-width=\"1.1378\" text-align=\"center\" text-anchor=\"middle\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan8953-0-2\" x=\"139.62622\" y=\"689.97375\" font-size=\"26.667px\" stroke-width=\"1.1378\" style=\"line-height:1\">Halifax</tspan></text>\n<text id=\"text8951-7-1\" x=\"19.232025\" y=\"386.22375\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"26.667px\" stroke-width=\"1.1378\" text-align=\"center\" text-anchor=\"middle\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan8953-11-6\" x=\"19.232025\" y=\"386.22375\" font-size=\"26.667px\" stroke-width=\"1.1378\" style=\"line-height:1\">Malham</tspan></text>\n<text id=\"text8951-5-5\" x=\"707.93561\" y=\"109.38216\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"26.667px\" stroke-width=\"1.1378\" text-align=\"center\" text-anchor=\"middle\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan8953-1-7\" x=\"707.93561\" y=\"109.38216\" font-size=\"26.667px\" stroke-width=\"1.1378\" style=\"line-height:1\">Whitby</tspan></text>\n<text id=\"text10315\" transform=\"rotate(-.11569)\" x=\"945.96802\" y=\"431.34045\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"34.133px\" font-style=\"italic\" font-weight=\"bold\" stroke-width=\"1.1378\" text-align=\"center\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan10317\" x=\"945.96802\" y=\"431.34045\" text-align=\"start\" style=\"line-height:1\">East </tspan><tspan id=\"tspan4174\" x=\"945.96802\" y=\"465.47375\" text-align=\"start\" style=\"line-height:1\">Yorkshire</tspan></text>\n<text id=\"text10315-4\" transform=\"rotate(-.11569)\" x=\"83.174454\" y=\"70.623154\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"34.133px\" font-style=\"italic\" font-weight=\"bold\" stroke-width=\"1.1378\" text-align=\"end\" text-anchor=\"end\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan10317-3\" x=\"20.022686\" y=\"70.623154\" text-align=\"end\" style=\"line-height:1\">North </tspan><tspan id=\"tspan4174-1\" x=\"20.022686\" y=\"104.75647\" text-align=\"end\" style=\"line-height:1\">Yorkshire</tspan></text>\n<text id=\"text10315-2\" transform=\"rotate(-.11569)\" x=\"528.9278\" y=\"954.66119\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"34.133px\" font-style=\"italic\" font-weight=\"bold\" stroke-width=\"1.1378\" text-align=\"center\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan4174-4\" x=\"528.9278\" y=\"954.66119\" text-align=\"start\" style=\"line-height:1\">South </tspan><tspan id=\"tspan4405\" x=\"528.9278\" y=\"988.79449\" text-align=\"start\" style=\"line-height:1\">Yorkshire</tspan></text>\n<text id=\"text10315-1\" transform=\"rotate(-.11569)\" x=\"84.820129\" y=\"758.4765\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"34.133px\" font-style=\"italic\" font-weight=\"bold\" stroke-width=\"1.1378\" text-align=\"center\" text-anchor=\"end\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan10317-1\" x=\"84.820129\" y=\"758.4765\" text-align=\"end\" style=\"line-height:1\">West </tspan><tspan id=\"tspan4174-3\" x=\"84.820122\" y=\"792.6098\" text-align=\"end\" style=\"line-height:1\">Yorkshire</tspan></text>\n<text id=\"text8951-9-2-4\" x=\"292.90002\" y=\"433.72174\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"26.667px\" stroke-width=\"1.1378\" text-align=\"center\" text-anchor=\"middle\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan8953-4-7-0\" x=\"292.90002\" y=\"433.72174\" font-size=\"26.667px\" stroke-width=\"1.1378\" style=\"line-height:1\">Harrogate</tspan></text>\n<text id=\"text8951-76\" x=\"523.48926\" y=\"827.00702\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"26.667px\" stroke-width=\"1.1378\" text-align=\"center\" text-anchor=\"middle\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan8953-08\" x=\"523.48926\" y=\"827.00702\" font-size=\"26.667px\" stroke-width=\"1.1378\" style=\"line-height:1\">DC1</tspan></text>\n<text id=\"text8951-3\" x=\"523.48926\" y=\"869.388\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"26.667px\" stroke-width=\"1.1378\" text-align=\"center\" text-anchor=\"middle\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan8953-3\" x=\"523.48926\" y=\"869.388\" font-size=\"26.667px\" stroke-width=\"1.1378\" style=\"line-height:1\">DC2</tspan></text>\n<rect id=\"dc1\" x=\"462.31\" y=\"801.99\" width=\"33.181\" height=\"33.181\" fill=\"#010101\" stroke=\"#000000\" stroke-linejoin=\"round\" stroke-width=\"2\"/>\n<text id=\"text8951-76-4\" x=\"968.36554\" y=\"609.92938\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"26.667px\" stroke-width=\"1.1378\" text-align=\"center\" text-anchor=\"middle\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan8953-08-9\" x=\"968.36554\" y=\"609.92938\" font-size=\"26.667px\" stroke-width=\"1.1378\" style=\"line-height:1\">DC3</tspan></text>\n<rect id=\"dc3\" x=\"907.19\" y=\"584.91\" width=\"33.181\" height=\"33.181\" fill=\"#010101\" stroke=\"#000000\" stroke-linejoin=\"round\" stroke-width=\"2\"/>\n<rect id=\"dc2\" x=\"462.31\" y=\"843.7\" width=\"33.181\" height=\"33.181\" fill=\"#010101\" stroke=\"#000000\" stroke-linejoin=\"round\" stroke-width=\"2\"/>\n<text id=\"text8951-76-0\" x=\"203.42383\" y=\"200.29286\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"26.667px\" stroke-width=\"1.1378\" text-align=\"center\" text-anchor=\"middle\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan8953-08-96\" x=\"203.42383\" y=\"200.29286\" font-size=\"26.667px\" stroke-width=\"1.1378\" style=\"line-height:1\">DC4</tspan></text>\n<rect id=\"dc4\" x=\"142.24\" y=\"175.28\" width=\"33.181\" height=\"33.181\" fill=\"#010101\" stroke=\"#000000\" stroke-linejoin=\"round\" stroke-width=\"2\"/>\n<text id=\"text8951-76-8\" x=\"203.42383\" y=\"240.97459\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"26.667px\" stroke-width=\"1.1378\" text-align=\"center\" text-anchor=\"middle\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan8953-08-7\" x=\"203.42383\" y=\"240.97459\" font-size=\"26.667px\" stroke-width=\"1.1378\" style=\"line-height:1\">DC5</tspan></text>\n<rect id=\"dc5\" x=\"142.24\" y=\"215.96\" width=\"33.181\" height=\"33.181\" fill=\"#010101\" stroke=\"#000000\" stroke-linejoin=\"round\" stroke-width=\"2\"/>\n<text id=\"text8951-76-87\" x=\"203.42383\" y=\"281.65631\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"26.667px\" stroke-width=\"1.1378\" text-align=\"center\" text-anchor=\"middle\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan8953-08-8\" x=\"203.42383\" y=\"281.65631\" font-size=\"26.667px\" stroke-width=\"1.1378\" style=\"line-height:1\">DC6</tspan></text>\n<text id=\"text8951-76-87-2\" x=\"400.75873\" y=\"843.3761\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"26.667px\" stroke-width=\"1.1378\" text-align=\"center\" text-anchor=\"middle\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan8953-08-8-1\" x=\"400.75873\" y=\"843.3761\" font-size=\"26.667px\" stroke-width=\"1.1378\" style=\"line-height:1\">GW2</tspan></text>\n<rect id=\"dc6\" x=\"142.24\" y=\"256.64\" width=\"33.181\" height=\"33.181\" fill=\"#010101\" stroke=\"#000000\" stroke-linejoin=\"round\" stroke-width=\"2\"/>\n<text id=\"text8951-76-87-6\" x=\"321.18439\" y=\"685.1687\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"26.667px\" stroke-width=\"1.1378\" text-align=\"center\" text-anchor=\"middle\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan8953-08-8-7\" x=\"321.18439\" y=\"685.1687\" font-size=\"26.667px\" stroke-width=\"1.1378\" style=\"line-height:1\">DC7</tspan></text>\n<rect id=\"dc7\" x=\"260\" y=\"660.15\" width=\"33.181\" height=\"33.181\" fill=\"#010101\" stroke=\"#000000\" stroke-linejoin=\"round\" stroke-width=\"2\"/>\n<path id=\"gw2\" d=\"m360.23 853.52-9.6229-18.177-9.1514-18.493 18.56-0.45356 18.563 0.17224-8.9368 18.63z\" fill=\"#010101\" stroke=\"#000000\" stroke-linejoin=\"round\" stroke-width=\"2\"/>\n<text id=\"text8951-76-87-2-4\" x=\"821.72528\" y=\"473.40454\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"26.667px\" stroke-width=\"1.1378\" text-align=\"center\" text-anchor=\"middle\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan8953-08-8-1-3\" x=\"821.72528\" y=\"473.40454\" font-size=\"26.667px\" stroke-width=\"1.1378\" style=\"line-height:1\">GW1</tspan></text>\n<path id=\"gw1\" d=\"m781.2 483.55-9.6229-18.177-9.1514-18.493 18.56-0.45356 18.563 0.17224-8.9368 18.63z\" fill=\"#010101\" stroke=\"#000000\" stroke-linejoin=\"round\" stroke-width=\"2\"/>\n<rect id=\"gw\" x=\"742.36\" y=\"772.88\" width=\"116.38\" height=\"34.777\" fill=\"#010101\" stroke=\"#000000\" stroke-linejoin=\"round\" stroke-width=\"2\"/>\n<rect id=\"dc\" x=\"742.36\" y=\"817.14\" width=\"116.38\" height=\"34.777\" fill=\"#010101\" stroke=\"#000000\" stroke-linejoin=\"round\" stroke-width=\"2\"/>\n<text id=\"text8951-76-1\" x=\"946.85956\" y=\"799.3269\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"26.667px\" stroke-width=\"1.1378\" text-align=\"center\" text-anchor=\"middle\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan8953-08-2\" x=\"946.85956\" y=\"799.3269\" font-size=\"26.667px\" stroke-width=\"1.1378\" style=\"line-height:1\">GW - Gateways</tspan></text>\n<text id=\"text8951-76-5\" x=\"953.09009\" y=\"848.93213\" fill=\"#000000\" font-family=\"Calibri\" font-size=\"26.667px\" stroke-width=\"1.1378\" text-align=\"center\" text-anchor=\"middle\" style=\"line-height:0%\" xml:space=\"preserve\"><tspan id=\"tspan8953-08-27\" x=\"953.09009\" y=\"848.93213\" font-size=\"26.667px\" stroke-width=\"1.1378\" style=\"line-height:1\">DC - Data Center</tspan></text>\n </g>\n</svg>\n"
+			},
+			"context": {
+				"areaColorsEditorConfig": [
+					{
+						"value": "#088F44",
+						"to": 7
+					},
+					{
+						"value": "#2EB82E",
+						"from": 7,
+						"to": 10
+					},
+					{
+						"value": "#FFD442",
+						"from": 10,
+						"to": 11
+					},
+					{
+						"value": "#ffa857",
+						"from": 11,
+						"to": 12
+					},
+					{
+						"value": "#FE3A3A",
+						"from": 12
+					}
+				]
+			}
+		},
+		"viz_RVKGRbRN": {
+			"type": "splunk.singlevalue",
+			"options": {
+				"backgroundColor": "transparent"
+			},
+			"dataSources": {
+				"primary": "ds_xSCoixy5"
+			}
+		},
+		"viz_GucZXMyt": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "## MAP Update (45s)"
+			}
+		},
+		"viz_8mwTmjxW": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "# Yorkshire Data"
+			}
+		},
+		"viz_ZwWKk5ax": {
+			"type": "splunk.rectangle",
+			"options": {
+				"strokeWidth": 0,
+				"fillColor": "> fillDataValue | rangeValue(fillColorEditorConfig)",
+				"fillOpacity": 0.75
+			},
+			"dataSources": {
+				"primary": "ds_dhbdDLft"
+			},
+			"context": {
+				"fillColorEditorConfig": [
+					{
+						"value": "#088F44",
+						"to": 7
+					},
+					{
+						"value": "#2EB82E",
+						"from": 7,
+						"to": 10
+					},
+					{
+						"value": "#FFD442",
+						"from": 10,
+						"to": 11
+					},
+					{
+						"value": "#ffa857",
+						"from": 11,
+						"to": 12
+					},
+					{
+						"value": "#FE3A3A",
+						"from": 12
+					}
+				],
+				"fillDataValue": "> primary | seriesByType(\"number\") | lastPoint()"
+			}
+		},
+		"viz_AHkiTBO4": {
+			"type": "splunk.choropleth.svg",
+			"options": {
+				"backgroundColor": "transparent",
+				"svg": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg id=\"svg5\" width=\"310\" height=\"80\" version=\"1.1\" viewBox=\"0 0 310 80\" xmlns=\"http://www.w3.org/2000/svg\">\n <defs id=\"defs2\">\n  <filter id=\"filter29555\" x=\"-.011525\" y=\"-.048571\" width=\"1.0264\" height=\"1.1114\" color-interpolation-filters=\"sRGB\">\n   <feFlood id=\"feFlood29545\" flood-color=\"rgb(0,0,0)\" flood-opacity=\".49804\" result=\"flood\"/>\n   <feComposite id=\"feComposite29547\" in=\"flood\" in2=\"SourceGraphic\" operator=\"in\" result=\"composite1\"/>\n   <feGaussianBlur id=\"feGaussianBlur29549\" in=\"composite1\" result=\"blur\" stdDeviation=\"1\"/>\n   <feOffset id=\"feOffset29551\" dx=\"1\" dy=\"1\" result=\"offset\"/>\n   <feComposite id=\"feComposite29553\" in=\"SourceGraphic\" in2=\"offset\" result=\"composite2\"/>\n  </filter>\n </defs>\n <g id=\"layer1\" transform=\"translate(-101.9 -50)\">\n  <rect id=\"rect22375\" x=\"106.9\" y=\"55\" width=\"295\" height=\"70\" rx=\"9.8333\" ry=\"10\" fill=\"#ffffff\" fill-opacity=\".5\" filter=\"url(#filter29555)\" stroke=\"#000000\" stroke-linejoin=\"round\" stroke-width=\"2\"/>\n  <path id=\"n-1\" d=\"m171.75 60-0.1546 60h-19.845v-60z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-2\" d=\"m176.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-3\" d=\"m201.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-4\" d=\"m226.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-5\" d=\"m251.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-6\" d=\"m276.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-7\" d=\"m301.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-8\" d=\"m326.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-9\" d=\"m351.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-10\" d=\"m376.9 60h9.6908c10.309 0 10.309 0 10.309 9.9073v40.213c0 9.88 0 9.88-10 9.88h-10z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <g id=\"g27944\" transform=\"matrix(.66667 0 0 .66667 101.34 60)\" fill=\"#000000\" stroke-linecap=\"round\">\n   <path id=\"path27936\" d=\"m55.044 90c-1.217 0-2.387-0.415-3.347-1.198-1.127-0.918-1.815-2.222-1.939-3.671l-1.603-20.142c-0.065-0.907-0.497-1.76-1.184-2.346l-10.457-8.923c-1.866-1.592-2.807-3.996-2.519-6.431l1.762-14.868-2.105 1.357c-0.712 0.459-1.179 1.204-1.282 2.044l-1.079 8.801c-0.317 2.581-2.677 4.432-5.257 4.132-1.262-0.147-2.39-0.779-3.176-1.779-0.785-0.999-1.133-2.245-0.978-3.506l1.52-12.399c0.246-2.009 1.38-3.762 3.112-4.81l9.54-5.771c1.987-1.202 4.347-1.678 6.643-1.346l3.988 0.581c2.193 0.319 3.707 2.294 3.446 4.496l-2.629 22.191c-0.086 0.729 0.196 1.449 0.755 1.926l8.4 7.168c1.252 1.069 2.038 2.624 2.157 4.266l1.926 24.425c0.24 2.868-1.815 5.384-4.68 5.723h-1e-3l-0.377 0.044c-0.212 0.023-0.425 0.036-0.636 0.036zm0.898-1.075h0.01z\"/>\n   <path id=\"path27938\" d=\"m63.423 46.153c-0.051 0-0.102-1e-3 -0.152-2e-3 -1.27-0.04-2.448-0.573-3.316-1.502l-8.351-8.941c-0.208-0.223-0.304-0.527-0.259-0.829l1.398-9.463c0.056-0.38 0.325-0.694 0.691-0.809 0.365-0.115 0.768-9e-3 1.028 0.272l12.42 13.297c1.775 1.9 1.682 4.897-0.209 6.683-0.887 0.838-2.036 1.294-3.25 1.294z\"/>\n   <path id=\"path27940\" d=\"m47.295 17.771c-4.899 0-8.885-3.986-8.885-8.886s3.986-8.885 8.885-8.885 8.886 3.986 8.886 8.886-3.986 8.885-8.886 8.885z\"/>\n   <path id=\"path27942\" d=\"m32.461 90c-0.341 0-0.685-0.033-1.027-0.1-2.832-0.55-4.727-3.309-4.225-6.149l4.979-28.135c0.062-0.351 0.306-0.642 0.64-0.765 0.335-0.122 0.708-0.059 0.982 0.168l7.628 6.304c0.277 0.229 0.41 0.589 0.348 0.943l-4.097 23.332c-0.249 1.418-1.039 2.647-2.226 3.464-0.898 0.618-1.937 0.938-3.002 0.938z\"/>\n  </g>\n </g>\n</svg>",
+				"areaIds": "> primary | seriesByName('label')",
+				"areaValues": "> primary | seriesByName('value')",
+				"areaColors": "> areaValues | rangeValue(areaColorsEditorConfig)"
+			},
+			"dataSources": {
+				"primary": "ds_2n7PDqKh"
+			},
+			"context": {
+				"areaColorsEditorConfig": [
+					{
+						"value": "transparent",
+						"to": 1
+					},
+					{
+						"value": "#118832",
+						"from": 1,
+						"to": 2
+					},
+					{
+						"value": "#CBA700",
+						"from": 2,
+						"to": 3
+					},
+					{
+						"value": "#D94E17",
+						"from": 3,
+						"to": 4
+					},
+					{
+						"value": "transparent",
+						"from": 4
+					}
+				]
+			}
+		},
+		"viz_zurM6bkD": {
+			"type": "splunk.choropleth.svg",
+			"options": {
+				"backgroundColor": "transparent",
+				"svg": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg id=\"svg5\" width=\"310\" height=\"80\" version=\"1.1\" viewBox=\"0 0 310 80\" xmlns=\"http://www.w3.org/2000/svg\">\n <defs id=\"defs2\">\n  <filter id=\"filter29555\" x=\"-.011525\" y=\"-.048571\" width=\"1.0264\" height=\"1.1114\" color-interpolation-filters=\"sRGB\">\n   <feFlood id=\"feFlood29545\" flood-color=\"rgb(0,0,0)\" flood-opacity=\".49804\" result=\"flood\"/>\n   <feComposite id=\"feComposite29547\" in=\"flood\" in2=\"SourceGraphic\" operator=\"in\" result=\"composite1\"/>\n   <feGaussianBlur id=\"feGaussianBlur29549\" in=\"composite1\" result=\"blur\" stdDeviation=\"1\"/>\n   <feOffset id=\"feOffset29551\" dx=\"1\" dy=\"1\" result=\"offset\"/>\n   <feComposite id=\"feComposite29553\" in=\"SourceGraphic\" in2=\"offset\" result=\"composite2\"/>\n  </filter>\n </defs>\n <g id=\"layer1\" transform=\"translate(-101.9 -50)\">\n  <rect id=\"rect22375\" x=\"106.9\" y=\"55\" width=\"295\" height=\"70\" rx=\"9.8333\" ry=\"10\" fill=\"#ffffff\" fill-opacity=\".5\" filter=\"url(#filter29555)\" stroke=\"#000000\" stroke-linejoin=\"round\" stroke-width=\"2\"/>\n  <path id=\"n-1\" d=\"m171.75 60-0.1546 60h-19.845v-60z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-2\" d=\"m176.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-3\" d=\"m201.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-4\" d=\"m226.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-5\" d=\"m251.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-6\" d=\"m276.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-7\" d=\"m301.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-8\" d=\"m326.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-9\" d=\"m351.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-10\" d=\"m376.9 60h9.6908c10.309 0 10.309 0 10.309 9.9073v40.213c0 9.88 0 9.88-10 9.88h-10z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <g id=\"g27944\" transform=\"matrix(.66667 0 0 .66667 101.34 60)\" fill=\"#000000\" stroke-linecap=\"round\">\n   <path id=\"path27936\" d=\"m55.044 90c-1.217 0-2.387-0.415-3.347-1.198-1.127-0.918-1.815-2.222-1.939-3.671l-1.603-20.142c-0.065-0.907-0.497-1.76-1.184-2.346l-10.457-8.923c-1.866-1.592-2.807-3.996-2.519-6.431l1.762-14.868-2.105 1.357c-0.712 0.459-1.179 1.204-1.282 2.044l-1.079 8.801c-0.317 2.581-2.677 4.432-5.257 4.132-1.262-0.147-2.39-0.779-3.176-1.779-0.785-0.999-1.133-2.245-0.978-3.506l1.52-12.399c0.246-2.009 1.38-3.762 3.112-4.81l9.54-5.771c1.987-1.202 4.347-1.678 6.643-1.346l3.988 0.581c2.193 0.319 3.707 2.294 3.446 4.496l-2.629 22.191c-0.086 0.729 0.196 1.449 0.755 1.926l8.4 7.168c1.252 1.069 2.038 2.624 2.157 4.266l1.926 24.425c0.24 2.868-1.815 5.384-4.68 5.723h-1e-3l-0.377 0.044c-0.212 0.023-0.425 0.036-0.636 0.036zm0.898-1.075h0.01z\"/>\n   <path id=\"path27938\" d=\"m63.423 46.153c-0.051 0-0.102-1e-3 -0.152-2e-3 -1.27-0.04-2.448-0.573-3.316-1.502l-8.351-8.941c-0.208-0.223-0.304-0.527-0.259-0.829l1.398-9.463c0.056-0.38 0.325-0.694 0.691-0.809 0.365-0.115 0.768-9e-3 1.028 0.272l12.42 13.297c1.775 1.9 1.682 4.897-0.209 6.683-0.887 0.838-2.036 1.294-3.25 1.294z\"/>\n   <path id=\"path27940\" d=\"m47.295 17.771c-4.899 0-8.885-3.986-8.885-8.886s3.986-8.885 8.885-8.885 8.886 3.986 8.886 8.886-3.986 8.885-8.886 8.885z\"/>\n   <path id=\"path27942\" d=\"m32.461 90c-0.341 0-0.685-0.033-1.027-0.1-2.832-0.55-4.727-3.309-4.225-6.149l4.979-28.135c0.062-0.351 0.306-0.642 0.64-0.765 0.335-0.122 0.708-0.059 0.982 0.168l7.628 6.304c0.277 0.229 0.41 0.589 0.348 0.943l-4.097 23.332c-0.249 1.418-1.039 2.647-2.226 3.464-0.898 0.618-1.937 0.938-3.002 0.938z\"/>\n  </g>\n </g>\n</svg>\n\n",
+				"areaIds": "> primary | seriesByName('label')",
+				"areaValues": "> primary | seriesByName('value')",
+				"areaColors": "> areaValues | rangeValue(areaColorsEditorConfig)"
+			},
+			"dataSources": {
+				"primary": "ds_thShAsiQ_ds_2n7PDqKh"
+			},
+			"context": {
+				"areaColorsEditorConfig": [
+					{
+						"value": "transparent",
+						"to": 1
+					},
+					{
+						"value": "#118832",
+						"from": 1,
+						"to": 2
+					},
+					{
+						"value": "#CBA700",
+						"from": 2,
+						"to": 3
+					},
+					{
+						"value": "#D94E17",
+						"from": 3,
+						"to": 4
+					},
+					{
+						"value": "transparent",
+						"from": 4
+					}
+				]
+			}
+		},
+		"viz_Kle2WQ4S": {
+			"type": "splunk.choropleth.svg",
+			"options": {
+				"backgroundColor": "transparent",
+				"svg": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg id=\"svg5\" width=\"310\" height=\"80\" version=\"1.1\" viewBox=\"0 0 310 80\" xmlns=\"http://www.w3.org/2000/svg\">\n <defs id=\"defs2\">\n  <filter id=\"filter29555\" x=\"-.011525\" y=\"-.048571\" width=\"1.0264\" height=\"1.1114\" color-interpolation-filters=\"sRGB\">\n   <feFlood id=\"feFlood29545\" flood-color=\"rgb(0,0,0)\" flood-opacity=\".49804\" result=\"flood\"/>\n   <feComposite id=\"feComposite29547\" in=\"flood\" in2=\"SourceGraphic\" operator=\"in\" result=\"composite1\"/>\n   <feGaussianBlur id=\"feGaussianBlur29549\" in=\"composite1\" result=\"blur\" stdDeviation=\"1\"/>\n   <feOffset id=\"feOffset29551\" dx=\"1\" dy=\"1\" result=\"offset\"/>\n   <feComposite id=\"feComposite29553\" in=\"SourceGraphic\" in2=\"offset\" result=\"composite2\"/>\n  </filter>\n </defs>\n <g id=\"layer1\" transform=\"translate(-101.9 -50)\">\n  <rect id=\"rect22375\" x=\"106.9\" y=\"55\" width=\"295\" height=\"70\" rx=\"9.8333\" ry=\"10\" fill=\"#ffffff\" fill-opacity=\".5\" filter=\"url(#filter29555)\" stroke=\"#000000\" stroke-linejoin=\"round\" stroke-width=\"2\"/>\n  <path id=\"n-1\" d=\"m171.75 60-0.1546 60h-19.845v-60z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-2\" d=\"m176.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-3\" d=\"m201.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-4\" d=\"m226.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-5\" d=\"m251.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-6\" d=\"m276.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-7\" d=\"m301.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-8\" d=\"m326.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-9\" d=\"m351.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-10\" d=\"m376.9 60h9.6908c10.309 0 10.309 0 10.309 9.9073v40.213c0 9.88 0 9.88-10 9.88h-10z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <g id=\"g27944\" transform=\"matrix(.66667 0 0 .66667 101.34 60)\" fill=\"#000000\" stroke-linecap=\"round\">\n   <path id=\"path27936\" d=\"m55.044 90c-1.217 0-2.387-0.415-3.347-1.198-1.127-0.918-1.815-2.222-1.939-3.671l-1.603-20.142c-0.065-0.907-0.497-1.76-1.184-2.346l-10.457-8.923c-1.866-1.592-2.807-3.996-2.519-6.431l1.762-14.868-2.105 1.357c-0.712 0.459-1.179 1.204-1.282 2.044l-1.079 8.801c-0.317 2.581-2.677 4.432-5.257 4.132-1.262-0.147-2.39-0.779-3.176-1.779-0.785-0.999-1.133-2.245-0.978-3.506l1.52-12.399c0.246-2.009 1.38-3.762 3.112-4.81l9.54-5.771c1.987-1.202 4.347-1.678 6.643-1.346l3.988 0.581c2.193 0.319 3.707 2.294 3.446 4.496l-2.629 22.191c-0.086 0.729 0.196 1.449 0.755 1.926l8.4 7.168c1.252 1.069 2.038 2.624 2.157 4.266l1.926 24.425c0.24 2.868-1.815 5.384-4.68 5.723h-1e-3l-0.377 0.044c-0.212 0.023-0.425 0.036-0.636 0.036zm0.898-1.075h0.01z\"/>\n   <path id=\"path27938\" d=\"m63.423 46.153c-0.051 0-0.102-1e-3 -0.152-2e-3 -1.27-0.04-2.448-0.573-3.316-1.502l-8.351-8.941c-0.208-0.223-0.304-0.527-0.259-0.829l1.398-9.463c0.056-0.38 0.325-0.694 0.691-0.809 0.365-0.115 0.768-9e-3 1.028 0.272l12.42 13.297c1.775 1.9 1.682 4.897-0.209 6.683-0.887 0.838-2.036 1.294-3.25 1.294z\"/>\n   <path id=\"path27940\" d=\"m47.295 17.771c-4.899 0-8.885-3.986-8.885-8.886s3.986-8.885 8.885-8.885 8.886 3.986 8.886 8.886-3.986 8.885-8.886 8.885z\"/>\n   <path id=\"path27942\" d=\"m32.461 90c-0.341 0-0.685-0.033-1.027-0.1-2.832-0.55-4.727-3.309-4.225-6.149l4.979-28.135c0.062-0.351 0.306-0.642 0.64-0.765 0.335-0.122 0.708-0.059 0.982 0.168l7.628 6.304c0.277 0.229 0.41 0.589 0.348 0.943l-4.097 23.332c-0.249 1.418-1.039 2.647-2.226 3.464-0.898 0.618-1.937 0.938-3.002 0.938z\"/>\n  </g>\n </g>\n</svg>\n\n",
+				"areaIds": "> primary | seriesByName('label')",
+				"areaValues": "> primary | seriesByName('value')",
+				"areaColors": "> areaValues | rangeValue(areaColorsEditorConfig)"
+			},
+			"dataSources": {
+				"primary": "ds_tII1pMBl_ds_thShAsiQ_ds_2n7PDqKh"
+			},
+			"context": {
+				"areaColorsEditorConfig": [
+					{
+						"value": "transparent",
+						"to": 1
+					},
+					{
+						"value": "#118832",
+						"from": 1,
+						"to": 2
+					},
+					{
+						"value": "#CBA700",
+						"from": 2,
+						"to": 3
+					},
+					{
+						"value": "#D94E17",
+						"from": 3,
+						"to": 4
+					},
+					{
+						"value": "transparent",
+						"from": 4
+					}
+				]
+			}
+		},
+		"viz_jVqVRK4W": {
+			"type": "splunk.choropleth.svg",
+			"options": {
+				"backgroundColor": "transparent",
+				"svg": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg id=\"svg5\" width=\"310\" height=\"80\" version=\"1.1\" viewBox=\"0 0 310 80\" xmlns=\"http://www.w3.org/2000/svg\">\n <defs id=\"defs2\">\n  <filter id=\"filter29555\" x=\"-.011525\" y=\"-.048571\" width=\"1.0264\" height=\"1.1114\" color-interpolation-filters=\"sRGB\">\n   <feFlood id=\"feFlood29545\" flood-color=\"rgb(0,0,0)\" flood-opacity=\".49804\" result=\"flood\"/>\n   <feComposite id=\"feComposite29547\" in=\"flood\" in2=\"SourceGraphic\" operator=\"in\" result=\"composite1\"/>\n   <feGaussianBlur id=\"feGaussianBlur29549\" in=\"composite1\" result=\"blur\" stdDeviation=\"1\"/>\n   <feOffset id=\"feOffset29551\" dx=\"1\" dy=\"1\" result=\"offset\"/>\n   <feComposite id=\"feComposite29553\" in=\"SourceGraphic\" in2=\"offset\" result=\"composite2\"/>\n  </filter>\n </defs>\n <g id=\"layer1\" transform=\"translate(-101.9 -50)\">\n  <rect id=\"rect22375\" x=\"106.9\" y=\"55\" width=\"295\" height=\"70\" rx=\"9.8333\" ry=\"10\" fill=\"#ffffff\" fill-opacity=\".5\" filter=\"url(#filter29555)\" stroke=\"#000000\" stroke-linejoin=\"round\" stroke-width=\"2\"/>\n  <path id=\"n-1\" d=\"m171.75 60-0.1546 60h-19.845v-60z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-2\" d=\"m176.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-3\" d=\"m201.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-4\" d=\"m226.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-5\" d=\"m251.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-6\" d=\"m276.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-7\" d=\"m301.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-8\" d=\"m326.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-9\" d=\"m351.75 60h20v60h-20z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <path id=\"n-10\" d=\"m376.9 60h9.6908c10.309 0 10.309 0 10.309 9.9073v40.213c0 9.88 0 9.88-10 9.88h-10z\" fill=\"#686868\" stroke-linejoin=\"round\" stroke-width=\"1.3935\"/>\n  <g id=\"g27944\" transform=\"matrix(.66667 0 0 .66667 101.34 60)\" fill=\"#000000\" stroke-linecap=\"round\">\n   <path id=\"path27936\" d=\"m55.044 90c-1.217 0-2.387-0.415-3.347-1.198-1.127-0.918-1.815-2.222-1.939-3.671l-1.603-20.142c-0.065-0.907-0.497-1.76-1.184-2.346l-10.457-8.923c-1.866-1.592-2.807-3.996-2.519-6.431l1.762-14.868-2.105 1.357c-0.712 0.459-1.179 1.204-1.282 2.044l-1.079 8.801c-0.317 2.581-2.677 4.432-5.257 4.132-1.262-0.147-2.39-0.779-3.176-1.779-0.785-0.999-1.133-2.245-0.978-3.506l1.52-12.399c0.246-2.009 1.38-3.762 3.112-4.81l9.54-5.771c1.987-1.202 4.347-1.678 6.643-1.346l3.988 0.581c2.193 0.319 3.707 2.294 3.446 4.496l-2.629 22.191c-0.086 0.729 0.196 1.449 0.755 1.926l8.4 7.168c1.252 1.069 2.038 2.624 2.157 4.266l1.926 24.425c0.24 2.868-1.815 5.384-4.68 5.723h-1e-3l-0.377 0.044c-0.212 0.023-0.425 0.036-0.636 0.036zm0.898-1.075h0.01z\"/>\n   <path id=\"path27938\" d=\"m63.423 46.153c-0.051 0-0.102-1e-3 -0.152-2e-3 -1.27-0.04-2.448-0.573-3.316-1.502l-8.351-8.941c-0.208-0.223-0.304-0.527-0.259-0.829l1.398-9.463c0.056-0.38 0.325-0.694 0.691-0.809 0.365-0.115 0.768-9e-3 1.028 0.272l12.42 13.297c1.775 1.9 1.682 4.897-0.209 6.683-0.887 0.838-2.036 1.294-3.25 1.294z\"/>\n   <path id=\"path27940\" d=\"m47.295 17.771c-4.899 0-8.885-3.986-8.885-8.886s3.986-8.885 8.885-8.885 8.886 3.986 8.886 8.886-3.986 8.885-8.886 8.885z\"/>\n   <path id=\"path27942\" d=\"m32.461 90c-0.341 0-0.685-0.033-1.027-0.1-2.832-0.55-4.727-3.309-4.225-6.149l4.979-28.135c0.062-0.351 0.306-0.642 0.64-0.765 0.335-0.122 0.708-0.059 0.982 0.168l7.628 6.304c0.277 0.229 0.41 0.589 0.348 0.943l-4.097 23.332c-0.249 1.418-1.039 2.647-2.226 3.464-0.898 0.618-1.937 0.938-3.002 0.938z\"/>\n  </g>\n </g>\n</svg>\n\n",
+				"areaIds": "> primary | seriesByName('label')",
+				"areaValues": "> primary | seriesByName('value')",
+				"areaColors": "> areaValues | rangeValue(areaColorsEditorConfig)"
+			},
+			"dataSources": {
+				"primary": "ds_V9VksXVm_ds_tII1pMBl_ds_thShAsiQ_ds_2n7PDqKh"
+			},
+			"context": {
+				"areaColorsEditorConfig": [
+					{
+						"value": "transparent",
+						"to": 1
+					},
+					{
+						"value": "#118832",
+						"from": 1,
+						"to": 2
+					},
+					{
+						"value": "#CBA700",
+						"from": 2,
+						"to": 3
+					},
+					{
+						"value": "#D94E17",
+						"from": 3,
+						"to": 4
+					},
+					{
+						"value": "transparent",
+						"from": 4
+					}
+				]
+			}
+		},
+		"viz_s6ah7ZCQ": {
+			"type": "splunk.markdown",
+			"options": {
+				"markdown": "## THROUPUT Update (2m)"
+			}
+		},
+		"viz_PH5Yc66K": {
+			"type": "splunk.singlevalue",
+			"options": {
+				"backgroundColor": "transparent",
+				"majorValue": "> sparklineValues | lastPoint()",
+				"trendValue": "> sparklineValues | delta(-2)",
+				"sparklineValues": "> primary | seriesByName('TimeStamp')"
+			},
+			"dataSources": {
+				"primary": "ds_mMzNKnTV_ds_xSCoixy5"
+			}
+		},
+		"viz_k2W74Lx7": {
+			"type": "splunk.singlevalue",
+			"options": {
+				"unit": "",
+				"majorValue": "> sparklineValues | lastPoint()",
+				"trendValue": "> sparklineValues | delta(-2)",
+				"sparklineValues": "> primary | seriesByName('value')",
+				"sparklineDisplay": "off",
+				"majorFontSize": 70,
+				"backgroundColor": "transparent"
+			},
+			"dataSources": {
+				"primary": "ds_a3GBBLhv"
+			},
+			"title": ""
+		}
+	},
+	"dataSources": {
+		"ds_WbWYfzcl": {
+			"type": "ds.search",
+			"options": {
+				"query": "| makeresults format=csv data=\"region,place\r\nnorth,whitby\r\nnorth,scarborough\r\nnorth,york\r\nnorth,harrogate\r\nnorth,malham\r\nnorth,skipton\r\nnorth,dc4\r\nnorth,dc5\r\nnorth,dc6\r\neast,hull\r\neast,dc3\r\neast,gw1\r\nsouth,sheffield\r\nsouth,dc1\r\nsouth,dc2\r\nsouth,gw2\r\nwest,keighley\r\nwest,bradford\r\nwest,halifax\r\nwest,leeds\r\nwest,wakefield\r\nwest,dc7\"\r\n| eval heat = random() % (12 - 1 + 1) + 1\r\n| table region place heat\r\n| eval _time = now()\r\n",
+				"queryParameters": {
+					"earliest": "-15m",
+					"latest": "now"
+				},
+				"refresh": "45s"
+			},
+			"name": "place-detail"
+		},
+		"ds_0RWxPPfq": {
+			"type": "ds.chain",
+			"options": {
+				"extend": "ds_WbWYfzcl",
+				"query": "| appendpipe \r\n    [stats avg(heat) as heat max(heat) as maxed by region \r\n    | eval place=region\r\n    | eval premaxed = heat\r\n    | eval heat = round(if(maxed>heat,heat+((maxed-heat)/2),heat),0) ]\r\n| appendpipe \r\n    [ stats avg(heat) as heat by place\r\n    | search place=\"dc*\"\r\n    | stats avg(heat) as heat\r\n    | eval place=\"dc\"]\r\n| appendpipe \r\n    [ stats avg(heat) as heat by place\r\n    | search place=\"gw*\"\r\n    | stats avg(heat) as heat\r\n    | eval place=\"gw\"]\r\n    \r\n| table _time  place heat\r\n"
+			},
+			"name": "full-breakdown"
+		},
+		"ds_xSCoixy5": {
+			"type": "ds.chain",
+			"options": {
+				"query": "|  head 1\n|  eval TimeStamp = strftime(_time,\"%d/%m/%Y %H:%M:%S\")\n|  table TimeStamp",
+				"extend": "ds_WbWYfzcl"
+			},
+			"name": "LastUpdate"
+		},
+		"ds_mC7E9sLV": {
+			"type": "ds.search",
+			"options": {
+				"query": "| makeresults count=4 \n| eval value=random() % (10 - 1 + 1) + 1 | streamstats count as num\n| table value\n| transpose\n| rename \"row 1\" as north| rename \"row 2\" as east| rename \"row 3\" as south| rename \"row 4\" as west\n| eval _time = now()\n| table _time north east south west",
+				"queryParameters": {
+					"earliest": "-15m",
+					"latest": "now"
+				},
+				"refresh": "120s",
+				"enableSmartSources": true
+			},
+			"name": "throughput"
+		},
+		"ds_2n7PDqKh": {
+			"type": "ds.search",
+			"options": {
+				"query": "| makeresults count=10\n| streamstats count as num\n| eval label = \"n-\" + num\n| eval valuex = $throughput:result.north$\n\n| eval colour = case(valuex>8,3,valuex>7,2,1=1,1)\n| eval value = if(num<=valuex,colour,0)\n| table label value",
+				"queryParameters": {
+					"earliest": "-15m",
+					"latest": "now"
+				}
+			},
+			"name": "throughput-north"
+		},
+		"ds_thShAsiQ_ds_2n7PDqKh": {
+			"type": "ds.search",
+			"options": {
+				"query": "| makeresults count=10\n| streamstats count as num\n| eval label = \"n-\" + num\n| eval valuex = $throughput:result.south$\n\n| eval colour = case(valuex>8,3,valuex>7,2,1=1,1)\n| eval value = if(num<=valuex,colour,0)\n| table label value",
+				"queryParameters": {
+					"earliest": "-15m",
+					"latest": "now"
+				}
+			},
+			"name": "throughput-south"
+		},
+		"ds_tII1pMBl_ds_thShAsiQ_ds_2n7PDqKh": {
+			"type": "ds.search",
+			"options": {
+				"query": "| makeresults count=10\n| streamstats count as num\n| eval label = \"n-\" + num\n| eval valuex = $throughput:result.west$\n\n| eval colour = case(valuex>8,3,valuex>7,2,1=1,1)\n| eval value = if(num<=valuex,colour,0)\n| table label value",
+				"queryParameters": {
+					"earliest": "-15m",
+					"latest": "now"
+				}
+			},
+			"name": "throughput-west"
+		},
+		"ds_V9VksXVm_ds_tII1pMBl_ds_thShAsiQ_ds_2n7PDqKh": {
+			"type": "ds.search",
+			"options": {
+				"query": "| makeresults count=10\n| streamstats count as num\n| eval label = \"n-\" + num\n| eval valuex = $throughput:result.east$\n\n| eval colour = case(valuex>8,3,valuex>7,2,1=1,1)\n| eval value = if(num<=valuex,colour,0)\n| table label value",
+				"queryParameters": {
+					"earliest": "-15m",
+					"latest": "now"
+				}
+			},
+			"name": "throughput-east"
+		},
+		"ds_mMzNKnTV_ds_xSCoixy5": {
+			"type": "ds.chain",
+			"options": {
+				"query": "|  head 1\n|  eval TimeStamp = strftime(_time,\"%d/%m/%Y %H:%M:%S\")\n|  table TimeStamp",
+				"extend": "ds_mC7E9sLV"
+			},
+			"name": "LastUpdate Throughput"
+		},
+		"ds_dhbdDLft": {
+			"type": "ds.chain",
+			"options": {
+				"extend": "ds_WbWYfzcl",
+				"query": "| stats avg(heat) as heat\r\n| eval heat = round(heat,0)"
+			},
+			"name": "overall-status"
+		},
+		"ds_a3GBBLhv": {
+			"type": "ds.chain",
+			"options": {
+				"extend": "ds_dhbdDLft",
+				"query": "| eval value=case(heat>=12,\"Errors\",heat>=11,\"Issues\",heat>=10,\"Warning\",heat>=7,\"OK\",1=1,\"Good\")"
+			},
+			"name": "Search_1"
+		}
+	},
+	"defaults": {
+		"dataSources": {
+			"ds.search": {
+				"options": {
+					"queryParameters": {
+						"latest": "$global_time.latest$",
+						"earliest": "$global_time.earliest$"
+					}
+				}
+			}
+		}
+	},
+	"inputs": {},
+	"layout": {
+		"type": "absolute",
+		"options": {
+			"display": "auto-scale",
+			"height": 1080,
+			"showTitleAndDescription": false,
+			"width": 1920
+		},
+		"structure": [
+			{
+				"item": "viz_ZwWKk5ax",
+				"type": "block",
+				"position": {
+					"x": 0,
+					"y": 0,
+					"w": 1920,
+					"h": 150
+				}
+			},
+			{
+				"item": "viz_GucZXMyt",
+				"type": "block",
+				"position": {
+					"x": 1660,
+					"y": 10,
+					"w": 190,
+					"h": 50
+				}
+			},
+			{
+				"item": "viz_3EaAGXAh",
+				"type": "block",
+				"position": {
+					"x": 250,
+					"y": 160,
+					"w": 1200,
+					"h": 900
+				}
+			},
+			{
+				"item": "viz_RVKGRbRN",
+				"type": "block",
+				"position": {
+					"x": 1680,
+					"y": 30,
+					"w": 210,
+					"h": 40
+				}
+			},
+			{
+				"item": "viz_8mwTmjxW",
+				"type": "block",
+				"position": {
+					"x": 10,
+					"y": 10,
+					"w": 440,
+					"h": 50
+				}
+			},
+			{
+				"item": "viz_AHkiTBO4",
+				"type": "block",
+				"position": {
+					"x": 170,
+					"y": 210,
+					"w": 155,
+					"h": 40
+				}
+			},
+			{
+				"item": "viz_zurM6bkD",
+				"type": "block",
+				"position": {
+					"x": 1020,
+					"y": 980,
+					"w": 155,
+					"h": 40
+				}
+			},
+			{
+				"item": "viz_Kle2WQ4S",
+				"type": "block",
+				"position": {
+					"x": 230,
+					"y": 810,
+					"w": 155,
+					"h": 40
+				}
+			},
+			{
+				"item": "viz_jVqVRK4W",
+				"type": "block",
+				"position": {
+					"x": 1380,
+					"y": 520,
+					"w": 155,
+					"h": 40
+				}
+			},
+			{
+				"item": "viz_s6ah7ZCQ",
+				"type": "block",
+				"position": {
+					"x": 1660,
+					"y": 70,
+					"w": 230,
+					"h": 50
+				}
+			},
+			{
+				"item": "viz_PH5Yc66K",
+				"type": "block",
+				"position": {
+					"x": 1680,
+					"y": 100,
+					"w": 210,
+					"h": 40
+				}
+			},
+			{
+				"item": "viz_k2W74Lx7",
+				"type": "block",
+				"position": {
+					"x": 750,
+					"y": 10,
+					"w": 480,
+					"h": 130
+				}
+			}
+		],
+		"globalInputs": []
+	},
+	"description": "",
+	"title": "Yorkshire Data"
+}
+    ]]></definition>
+    <meta type="hiddenElements"><![CDATA[
+{
+	"hideEdit": false,
+	"hideOpenInSearch": false,
+	"hideExport": false
+}
+    ]]></meta>
+</dashboard>
